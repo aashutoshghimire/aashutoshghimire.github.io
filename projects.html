@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Publications | Ashutosh Ghimire</title>
-    <meta name="description" content="Selected publications by Ashutosh Ghimire in trustworthy AI, hardware security, side-channel analysis, reverse engineering, HDC anomaly detection, LLM-assisted IoT security, and drug discovery.">
-    <meta property="og:title" content="Publications - Ashutosh Ghimire">
-    <meta property="og:description" content="Selected publications in AI, hardware security, and domain-aware intelligent systems.">
+    <title>Projects | Ashutosh Ghimire</title>
+    <meta name="description" content="Project portfolio for Ashutosh Ghimire, including hardware security, trustworthy AI, LLM-assisted systems, hyperdimensional computing, software security, and AI for drug discovery.">
+    <meta property="og:title" content="Projects - Ashutosh Ghimire">
+    <meta property="og:description" content="Research projects with paper figures and implementation-focused summaries.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/hdc-anomaly.png">
+    <meta property="og:image" content="assets/images/thesis-localization.png">
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script defer src="assets/js/data.js"></script>
     <script defer src="assets/js/app.js"></script>
   </head>
-  <body data-page="publications">
+  <body data-page="projects">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" data-header>
       <nav class="nav-shell" aria-label="Main navigation">
@@ -36,12 +36,11 @@
     </header>
 
     <main id="main">
-      <section class="page-hero publications-hero">
+      <section class="page-hero projects-hero">
         <div class="container page-hero-content">
-          <p class="eyebrow">Publications</p>
-          <h1>Selected papers across AI security, hardware trust, HDC, and drug discovery.</h1>
-          <p>Google Scholar remains the main hub for the full and changing publication list.</p>
-          <a class="button button-secondary" href="https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en" target="_blank" rel="noreferrer">View Google Scholar</a>
+          <p class="eyebrow">Projects</p>
+          <h1>Implementation-focused research projects.</h1>
+          <p>Published systems, active prototypes, and survey work grouped by application area. These cards use paper figures where available, so the page feels like Ashutosh's actual research rather than a generic template.</p>
         </div>
       </section>
 
@@ -49,25 +48,27 @@
         <div class="container">
           <div class="section-heading section-heading-stack">
             <div>
-              <p class="eyebrow">Library</p>
-              <h2>Browse by domain.</h2>
+              <p class="eyebrow">Browse</p>
+              <h2>Projects by theme.</h2>
+              <p class="section-note">Use the filters to narrow the project cards. The search and filters run locally, so they work on GitHub Pages without any backend.</p>
             </div>
-            <div class="publication-controls">
+            <div class="project-controls">
               <label class="search-box">
-                <span class="sr-only">Search publications</span>
-                <input type="search" data-publication-search placeholder="Search title, venue, or tag">
+                <span class="sr-only">Search projects</span>
+                <input type="search" data-project-search placeholder="Search projects, methods, or tools">
               </label>
-              <div class="filter-row" data-publication-filters aria-label="Publication filters"></div>
+              <div class="filter-row" data-project-filters aria-label="Project filters"></div>
             </div>
           </div>
-          <div class="publication-list" data-publications></div>
+          <p class="result-count" data-project-count aria-live="polite"></p>
+          <div class="project-grid" data-projects></div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div><strong>Ashutosh Ghimire</strong><p>Selected research outputs with links to publisher, DOI, and Scholar records.</p></div>
+        <div><strong>Ashutosh Ghimire</strong><p>Research projects spanning trustworthy AI, hardware security, LLM systems, HDC, and drug discovery.</p></div>
         <div class="footer-links" data-footer-links></div>
       </div>
       <div class="container footer-bottom"><span>Copyright <span data-year></span> Ashutosh Ghimire.</span><span>Last curated May 2026.</span></div>

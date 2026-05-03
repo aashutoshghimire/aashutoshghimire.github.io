@@ -6,6 +6,7 @@ Static multi-page research portfolio for GitHub Pages.
 
 - `index.html` - home page
 - `research.html` - research themes and projects
+- `projects.html` - project portfolio with filters and paper figures
 - `publications.html` - selected publications with filters/search
 - `experience.html` - timeline, education, skills, awards
 - `contact.html` - contact links and mailto form
@@ -29,4 +30,4 @@ Most website content lives in `assets/js/data.js`. Update the arrays there for p
 
 The CV button points to `assets/docs/Ashutosh_Ghimire_CV.pdf`. Replace that file with the latest CV when needed.
 
-If the published GitHub Pages URL is not `https://aashutoshghimire.github.io/portfolio/`, update the URLs in `sitemap.xml`.
+If the published GitHub Pages URL is not `https://aashutoshghimire.github.io/`, update the URLs in `sitemap.xml`.

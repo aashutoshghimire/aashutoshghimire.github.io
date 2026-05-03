@@ -22,8 +22,7 @@
 
   function setupTheme() {
     const saved = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initial = saved || (prefersDark ? "dark" : "light");
+    const initial = saved || "light";
     root.dataset.theme = initial;
     updateThemeButtons(initial);
 
@@ -116,8 +115,9 @@
 
   function projectCard(project) {
     const links = project.links.map((link) => `<a class="mini-link" href="${link.url}"${externalAttrs(link.url)}>${escapeHtml(link.label)}</a>`).join("");
+    const searchText = [project.title, project.category, project.status, project.problem, project.approach, project.result, project.tags.join(" "), project.tech.join(" ")].join(" ").toLowerCase();
     return `
-      <article class="project-card" data-tags="${project.tags.join("|").toLowerCase()}">
+      <article class="project-card" data-tags="${project.tags.map((tag) => tag.toLowerCase()).join("|")}" data-search="${escapeHtml(searchText)}">
         <img src="${project.image}" alt="${escapeHtml(project.title)} visual">
         <div class="project-card-body">
           <div class="project-meta">
@@ -142,18 +142,38 @@
     const all = document.querySelector("[data-projects]");
     if (!all) return;
     all.innerHTML = data.projects.map(projectCard).join("");
-    setupFilters("[data-project-filters]", data.projects.flatMap((project) => project.tags), (tag) => {
-      const cards = all.querySelectorAll(".project-card");
-      cards.forEach((card) => {
-        const show = tag === "All" || card.dataset.tags.includes(tag.toLowerCase());
+    let currentTag = "All";
+    let currentQuery = "";
+    const countTarget = document.querySelector("[data-project-count]");
+    const apply = () => {
+      let visible = 0;
+      all.querySelectorAll(".project-card").forEach((card) => {
+        const tagList = card.dataset.tags.split("|");
+        const tagMatch = currentTag === "All" || tagList.includes(currentTag.toLowerCase());
+        const queryMatch = !currentQuery || card.dataset.search.includes(currentQuery);
+        const show = tagMatch && queryMatch;
         card.hidden = !show;
+        if (show) visible += 1;
       });
+      if (countTarget) countTarget.textContent = `${visible} project${visible === 1 ? "" : "s"} shown`;
+    };
+    setupFilters("[data-project-filters]", data.projectFilters || data.projects.flatMap((project) => project.tags), (tag) => {
+      currentTag = tag;
+      apply();
     });
+    const input = document.querySelector("[data-project-search]");
+    if (input) {
+      input.addEventListener("input", () => {
+        currentQuery = input.value.trim().toLowerCase();
+        apply();
+      });
+    }
+    apply();
   }
 
   function publicationCard(publication) {
     return `
-      <article class="publication-card" data-tags="${publication.tags.join("|").toLowerCase()}" data-search="${escapeHtml([publication.title, publication.authors, publication.venue, publication.year, publication.tags.join(" ")].join(" ").toLowerCase())}">
+      <article class="publication-card" data-tags="${publication.tags.map((tag) => tag.toLowerCase()).join("|")}" data-search="${escapeHtml([publication.title, publication.authors, publication.venue, publication.year, publication.tags.join(" ")].join(" ").toLowerCase())}">
         <div>
           <div class="publication-meta">
             <span>${escapeHtml(publication.year)}</span>
@@ -183,12 +203,12 @@
     let currentQuery = "";
     const apply = () => {
       all.querySelectorAll(".publication-card").forEach((card) => {
-        const tagMatch = currentTag === "All" || card.dataset.tags.includes(currentTag.toLowerCase());
+        const tagMatch = currentTag === "All" || card.dataset.tags.split("|").includes(currentTag.toLowerCase());
         const queryMatch = !currentQuery || card.dataset.search.includes(currentQuery);
         card.hidden = !(tagMatch && queryMatch);
       });
     };
-    setupFilters("[data-publication-filters]", data.publications.flatMap((publication) => publication.tags), (tag) => {
+    setupFilters("[data-publication-filters]", data.publicationFilters || data.publications.flatMap((publication) => publication.tags), (tag) => {
       currentTag = tag;
       apply();
     });
@@ -204,7 +224,8 @@
   function setupFilters(selector, values, callback) {
     const target = document.querySelector(selector);
     if (!target) return;
-    const unique = ["All", ...Array.from(new Set(values)).sort()];
+    const withoutAll = values.filter((value) => value !== "All");
+    const unique = ["All", ...Array.from(new Set(withoutAll))];
     target.innerHTML = unique.map((tag, index) => `<button class="filter-button${index === 0 ? " is-active" : ""}" type="button" data-filter="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`).join("");
     target.querySelectorAll("[data-filter]").forEach((button) => {
       button.addEventListener("click", () => {
