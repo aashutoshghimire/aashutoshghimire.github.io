@@ -25,23 +25,23 @@ window.siteData = {
   ],
   roleFit: [
     {
-      title: "AI/ML Engineer Intern",
-      description: "Builds reproducible Python ML pipelines, evaluates models, prepares datasets, and turns research ideas into working experiments.",
+      title: "Machine Learning Engineering",
+      description: "Building reproducible Python ML pipelines, preparing datasets, evaluating models, and turning research ideas into working experiments.",
       tags: ["Python", "scikit-learn", "PyTorch", "TensorFlow", "pandas"]
     },
     {
-      title: "Applied Scientist / Research Intern",
-      description: "Designs experiments, compares baselines, reads papers deeply, and communicates results through papers, reports, and demos.",
+      title: "Applied AI Research",
+      description: "Designing experiments, comparing baselines, reading papers deeply, and communicating results through papers, reports, and demos.",
       tags: ["Experiment Design", "Ablations", "Robustness", "Scientific Writing"]
     },
     {
-      title: "Trustworthy AI / Security ML",
-      description: "Works on adversarial ML, explainability, anomaly detection, side-channel learning, and AI for security-critical systems.",
+      title: "Trustworthy AI and Security ML",
+      description: "Working on adversarial ML, explainability, anomaly detection, side-channel learning, and AI for security-critical systems.",
       tags: ["Adversarial ML", "XAI", "Hardware Security", "IoT Security"]
     },
     {
-      title: "ML Systems / Software Engineering",
-      description: "Brings production software experience in APIs, backend systems, Git workflows, Linux, containers, and performance-focused ML code.",
+      title: "ML Systems and Software Engineering",
+      description: "Bringing production software experience in APIs, backend systems, Git workflows, Linux, containers, and performance-focused ML code.",
       tags: ["REST APIs", "Git", "Linux", "Docker", "HPC"]
     }
   ],
