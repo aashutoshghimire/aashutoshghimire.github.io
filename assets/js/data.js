@@ -1,7 +1,7 @@
 window.siteData = {
   profile: {
     name: "Ashutosh Ghimire",
-    title: "PhD Scholar | Trustworthy AI, Hardware Security, and AI-Driven Drug Discovery",
+    title: "PhD Candidate | AI/ML, Trustworthy AI, Hardware Security, and Applied ML Systems",
     location: "Dayton / Fairborn, Ohio, USA",
     email: "ashutosh.ghimire@wright.edu",
     secondaryEmail: "aashutoshghimire7@gmail.com",
@@ -18,42 +18,70 @@ window.siteData = {
     ]
   },
   stats: [
-    { value: "PhD", label: "Computer Science and Engineering, Wright State University" },
-    { value: "231", label: "Google Scholar citations, May 2026" },
-    { value: "30+", label: "Publications and scholarly outputs represented on Scholar" },
-    { value: "5", label: "Core research themes across trustworthy AI and applied security" }
+    { value: "PhD", label: "AI/ML PhD candidate in Computer Science and Engineering" },
+    { value: "11", label: "Project case studies across ML, security, systems, and scientific AI" },
+    { value: "33", label: "Scholar-listed papers supporting technical credibility" },
+    { value: "6+", label: "Years across software engineering and applied AI research" }
   ],
-  projectFilters: ["All", "Hardware Security", "Trustworthy AI", "LLMs", "HDC", "Drug Discovery", "Software Security", "Systems"],
-  publicationFilters: ["All", "Hardware Security", "Trustworthy AI", "HDC", "Drug Discovery", "Software Security", "LLMs", "Side-Channel"],
+  roleFit: [
+    {
+      title: "AI/ML Engineer Intern",
+      description: "Builds reproducible Python ML pipelines, evaluates models, prepares datasets, and turns research ideas into working experiments.",
+      tags: ["Python", "scikit-learn", "PyTorch", "TensorFlow", "pandas"]
+    },
+    {
+      title: "Applied Scientist / Research Intern",
+      description: "Designs experiments, compares baselines, reads papers deeply, and communicates results through papers, reports, and demos.",
+      tags: ["Experiment Design", "Ablations", "Robustness", "Scientific Writing"]
+    },
+    {
+      title: "Trustworthy AI / Security ML",
+      description: "Works on adversarial ML, explainability, anomaly detection, side-channel learning, and AI for security-critical systems.",
+      tags: ["Adversarial ML", "XAI", "Hardware Security", "IoT Security"]
+    },
+    {
+      title: "ML Systems / Software Engineering",
+      description: "Brings production software experience in APIs, backend systems, Git workflows, Linux, containers, and performance-focused ML code.",
+      tags: ["REST APIs", "Git", "Linux", "Docker", "HPC"]
+    }
+  ],
+  projectDomains: [
+    { title: "Security ML", description: "Hardware Trojan detection, side-channel learning, adversarial robustness, and IoT anomaly detection." },
+    { title: "Applied LLM and NLP", description: "LLM-assisted explanations, rubric-aware scoring, analyst support, and human-centered evaluation." },
+    { title: "Scientific ML", description: "Drug-target affinity prediction, sequence modeling, medical imaging, and domain-aware AI workflows." },
+    { title: "ML Systems", description: "Reproducible experiments, multicore ML performance, HPC workflows, containers, and batch pipelines." },
+    { title: "Software Engineering", description: "REST APIs, production web systems, secure data exchange, Git workflows, and backend implementation." },
+    { title: "Research Communication", description: "Publications, technical reports, surveys, literature synthesis, and clear stakeholder-facing summaries." }
+  ],
   themes: [
     {
       title: "Trustworthy AI and Adversarial ML",
       image: "assets/images/hero-research.png",
-      description: "Designing AI systems that remain dependable under attack, uncertainty, noisy measurements, and distribution shift.",
+      description: "Evaluating and improving ML behavior under attack, uncertainty, noisy measurements, and distribution shift.",
       tags: ["Adversarial ML", "Robustness", "Explainability", "Security"]
     },
     {
       title: "AI for Hardware Security",
       image: "assets/images/hardware-security.png",
-      description: "Applying machine learning to side-channel measurements for golden-reference-free hardware Trojan detection and localization.",
+      description: "Building ML pipelines on side-channel measurements for golden-reference-free hardware Trojan detection and localization.",
       tags: ["Hardware Trojan", "Side-Channel", "FPGA", "Unsupervised ML"]
     },
     {
       title: "LLM-Assisted Explainable Systems",
       image: "assets/images/llm-iot.png",
-      description: "Combining numerical models with LLM-based explanation layers for cybersecurity and human-centered assessment systems.",
+      description: "Combining numerical models with LLM-based explanation layers for cybersecurity and human-centered assessment workflows.",
       tags: ["LLMs", "XAI", "Clinical AI", "IoT Security"]
     },
     {
       title: "Hyperdimensional Computing",
       image: "assets/images/hdc-anomaly.png",
-      description: "Exploring brain-inspired high-dimensional representations for efficient anomaly detection in IoT, edge AI, and data streams.",
+      description: "Testing brain-inspired high-dimensional representations for efficient anomaly detection in IoT, edge AI, and data streams.",
       tags: ["HDC", "Anomaly Detection", "IoT", "Edge AI"]
     },
     {
       title: "AI for Drug Discovery",
       image: "assets/images/drug-discovery.png",
-      description: "Using deep learning and attention mechanisms to model drug-target interactions and support early-stage discovery workflows.",
+      description: "Using deep learning and attention mechanisms to model drug-target interactions and support scientific ML workflows.",
       tags: ["Drug Discovery", "Self-Attention", "CNN", "Bioinformatics"]
     }
   ],
@@ -61,7 +89,7 @@ window.siteData = {
     {
       title: "Golden-Free AI-Assisted Hardware Trojan Detection",
       category: "AI for Hardware Security",
-      status: "Published research / core PhD direction",
+      status: "ACM JETC, 2025",
       priority: "Featured",
       image: "assets/images/thesis-localization.png",
       tags: ["Hardware Security", "AI", "Side-Channel", "FPGA"],
@@ -76,7 +104,7 @@ window.siteData = {
       category: "AI + Signal/Image Processing",
       status: "Integration, 2026",
       priority: "Featured",
-      image: "assets/images/hardware-model-architecture.png",
+      image: "assets/images/integration-main-model.png",
       tags: ["Hardware Security", "Image Processing", "Signal Processing", "Unsupervised ML"],
       problem: "Stealthy IC modifications threaten semiconductor supply-chain trust, while functional testing and reverse engineering are costly to scale.",
       approach: "Converted side-channel data into image-like representations and used image processing with unsupervised machine learning to cluster Trojan behavior.",
@@ -85,22 +113,35 @@ window.siteData = {
       links: [{ label: "ScienceDirect", url: "https://doi.org/10.1016/j.vlsi.2025.102628" }]
     },
     {
-      title: "Adversarially Resilient ML for Hardware Trojan Detection",
-      category: "Trustworthy AI / Adversarial ML",
-      status: "Published and continuing research",
+      title: "Adversarial Attack Resilient ML-Assisted Golden Free Hardware Trojan Detection",
+      category: "Hardware Security / Adversarial ML",
+      status: "Microelectronics, 2026",
       priority: "Featured",
-      image: "assets/images/adversarial-threat-model.png",
+      image: "assets/images/microelectronics-robustness-results.png",
       tags: ["Adversarial ML", "Hardware Security", "Trustworthy AI", "Robustness"],
       problem: "Security models that perform well under clean conditions can fail under perturbations, process noise, or adaptive attacks.",
-      approach: "Designed adversarial evaluation and defense pipelines comparing unsupervised and pseudo-supervised models under different attack strengths.",
-      result: "Resume-backed experiments report a 77% robustness improvement in the project context.",
-      tech: ["Python", "ART", "scikit-learn", "AdaBoost", "Clustering", "pandas"],
+      approach: "Evaluated golden-reference-free hardware Trojan detection under adversarial attack scenarios and robustness-focused model variants.",
+      result: "Published Microelectronics work connects adversarial robustness with practical side-channel hardware Trojan detection.",
+      tech: ["Python", "ART", "scikit-learn", "Adversarial ML", "Clustering", "pandas"],
       links: [{ label: "Microelectronics DOI", url: "https://doi.org/10.3390/microelectronics2010002" }]
+    },
+    {
+      title: "Synthetic Data Augmentation for Robust Hardware Trojan Detection",
+      category: "Journal of Electronic Testing / Under Submission",
+      status: "Manuscript under submission",
+      priority: "Featured",
+      image: "assets/images/jet-framework-model.png",
+      tags: ["Hardware Security", "Synthetic Data", "SMOTE", "TVAE", "Adversarial ML"],
+      problem: "Hardware Trojan datasets are often small, imbalanced, and vulnerable to adversarial perturbations, making robust evaluation difficult.",
+      approach: "Combined feature-space attack analysis with synthetic data augmentation and adversarially trained models for side-channel Trojan detection.",
+      result: "Prepared as under-submission work for Journal of Electronic Testing, extending the hardware-security research story beyond clean-data detection.",
+      tech: ["Python", "SMOTE", "TVAE", "SVM", "Adversarial Training", "Side-Channel Data"],
+      links: []
     },
     {
       title: "Clinical Communication and LLM-Based HEART Rubric Scoring",
       category: "Healthcare AI / LLMs",
-      status: "Active research prototype",
+      status: "Active AI prototype",
       priority: "Featured",
       image: "assets/images/clinical-ai.png",
       tags: ["LLMs", "Healthcare AI", "Rubric Scoring", "Human-Centered AI"],
@@ -113,7 +154,7 @@ window.siteData = {
     {
       title: "CSatDTA: Drug-Target Affinity Prediction",
       category: "AI for Drug Discovery",
-      status: "Published journal article",
+      status: "IJMS, 2022",
       priority: "Featured",
       image: "assets/images/csatdta.png",
       tags: ["Drug Discovery", "Deep Learning", "Self-Attention", "Bioinformatics"],
@@ -126,7 +167,7 @@ window.siteData = {
     {
       title: "Hyperdimensional Computing for IoT Anomaly Detection",
       category: "HDC / Cybersecurity",
-      status: "Conference and IEEE Access related work",
+      status: "IEEE Access / SATC",
       priority: "Featured",
       image: "assets/images/hyperdimention computing.jpg",
       tags: ["HDC", "Anomaly Detection", "IoT Security", "Edge AI"],
@@ -139,7 +180,7 @@ window.siteData = {
     {
       title: "LLM-Assisted Explainable IoT Systems for Critical Infrastructure",
       category: "LLMs / XAI / IoT Security",
-      status: "Conference research",
+      status: "SATC, 2025",
       priority: "More",
       image: "assets/images/llm-iot.png",
       tags: ["LLMs", "XAI", "IoT Security", "Critical Infrastructure"],
@@ -339,6 +380,206 @@ window.siteData = {
       featured: false,
       tags: ["Side-Channel", "ML Security", "Survey"],
       link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Implementation of Secure and Privacy-Aware AI Hardware Using Distributed Federated Learning",
+      authors: "Ashutosh Ghimire, A. N. Asiri, B. Hildebrand, Fathi Amsaad",
+      venue: "IEEE Dallas Circuits and Systems Conference, 1-6",
+      year: "2023",
+      type: "Conference",
+      featured: false,
+      tags: ["Federated Learning", "AI Hardware", "Privacy"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "An Overview of Secure Network Segmentation in Connected IIoT Environments",
+      authors: "Vishnu Vardhan Baligodugula, Ashutosh Ghimire, Fathi Amsaad",
+      venue: "Computing&AI Connect 1(1), 1-10",
+      year: "2024",
+      type: "Journal",
+      featured: false,
+      tags: ["IIoT", "Cybersecurity", "Network Segmentation"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Quantum Communication Networks: Design, Reliability, and Security",
+      authors: "B. Hildebrand, Ashutosh Ghimire, Fathi Amsaad, A. Razaque, S. P. Mohanty",
+      venue: "IEEE Potentials 44(1), 4-10",
+      year: "2023",
+      type: "Journal",
+      featured: false,
+      tags: ["Quantum Networks", "Security", "Reliability"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "ML-Assisted Security for Anomaly Detection in Industrial IoT (IIoT) Applications",
+      authors: "B. R. Konatham, T. Simra, Ashutosh Ghimire, Fathi Amsaad, M. I. Ibrahem, N. Z. Jhanjhi",
+      venue: "International Conference on Smart Technologies for Smart Nation",
+      year: "2023",
+      type: "Conference",
+      featured: false,
+      tags: ["IIoT", "Anomaly Detection", "Cybersecurity"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Nepali Handwriting Recognition Using Convolution Neural Network",
+      authors: "Ashutosh Ghimire, A. Chapagain, U. Bhattarai, A. Jaiswal",
+      venue: "International Research Journal of Innovations in Engineering and Technology",
+      year: "2020",
+      type: "Journal",
+      featured: false,
+      tags: ["Deep Learning", "Computer Vision", "OCR"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "FPGA Hardware Trojan Detection: Golden-Free Machine Learning Approach",
+      authors: "Ashutosh Ghimire, Fathi Amsaad, T. Hossain, T. Hoque, A. Sherif",
+      venue: "NAECON 2023, 181-186",
+      year: "2023",
+      type: "Conference",
+      featured: false,
+      tags: ["Hardware Security", "FPGA", "Machine Learning"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Predicting Breast Cancer Using Support Vector Machine Learning Algorithm",
+      authors: "A. Chapagain, Ashutosh Ghimire, A. Joshi, A. Jaiswal",
+      venue: "International Research Journal of Innovations in Engineering and Technology",
+      year: "2020",
+      type: "Journal",
+      featured: false,
+      tags: ["Healthcare AI", "SVM", "Machine Learning"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Aging of SRAM PUFs: Mitigation and Advancements Through Machine Learning Techniques",
+      authors: "N. P. Bhatta, H. Singh, Ashutosh Ghimire, M. T. Rahman, Fathi Amsaad",
+      venue: "IEEE Physical Assurance and Inspection of Electronics, 1-6",
+      year: "2023",
+      type: "Conference",
+      featured: false,
+      tags: ["Hardware Security", "PUF", "Machine Learning"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Comprehensive Survey of Machine Learning Techniques for Detecting and Preventing Network Layer DoS Attacks",
+      authors: "N. P. Bhatta, Ashutosh Ghimire, A. A. Hossain, Fathi Amsaad",
+      venue: "IFIP International Internet of Things Conference, 347-356",
+      year: "2023",
+      type: "Conference",
+      featured: false,
+      tags: ["Cybersecurity", "DoS", "Survey"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Evaluating the Robustness of SRAM Physical Unclonable Functions: Empirical Investigations",
+      authors: "H. Singh, N. P. Bhatta, K. M. T. Jawad, Ashutosh Ghimire, M. D. T. Rahman, Fathi Amsaad",
+      venue: "IEEE Physical Assurance and Inspection of Electronics, 1-7",
+      year: "2023",
+      type: "Conference",
+      featured: false,
+      tags: ["Hardware Security", "PUF", "Reliability"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Identification and Localization of Quantum Electromagnetic Fields of Hardware Trojan Attacks Using QDM-Based Unsupervised Deep Learning",
+      authors: "Ashutosh Ghimire, A. A. Hossain, N. P. Bhatta, Fathi Amsaad",
+      venue: "IEEE Physical Assurance and Inspection of Electronics, 1-7",
+      year: "2023",
+      type: "Conference",
+      featured: false,
+      tags: ["Hardware Security", "EM Side-Channel", "Deep Learning"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Kidney Stone Detection in Ultrasound Imaging: Addressing Noise and Image Segmentation",
+      authors: "A. V. R. Tummala, Ashutosh Ghimire, Fathi Amsaad",
+      venue: "International Conference on Secure IoT, Assured and Trusted Computing",
+      year: "2025",
+      type: "Conference",
+      featured: false,
+      tags: ["Healthcare AI", "Image Segmentation", "Ultrasound"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Adaptive Ensemble Learning for Real-Time Financial Fraud Detection: A Lightweight Approach",
+      authors: "Vishnu Vardhan Baligodugula, Ashutosh Ghimire, Fathi Amsaad",
+      venue: "International Conference on Secure IoT, Assured and Trusted Computing",
+      year: "2025",
+      type: "Conference",
+      featured: false,
+      tags: ["Fraud Detection", "Ensemble Learning", "Trustworthy AI"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Adversarial Attack Against Golden Reference-Free Hardware Trojan Detection Approach",
+      authors: "Ashutosh Ghimire, Mohammed Alkurdi, Karma Gurung, Fathi Amsaad",
+      venue: "IEEE Physical Assurance and Inspection of Electronics, 1-7",
+      year: "2024",
+      type: "Conference",
+      featured: false,
+      tags: ["Adversarial ML", "Hardware Security", "Trustworthy AI"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "AI-Enabled Hardware Trojan Detection for Secure and Trusted Context-Aware Embedded Systems",
+      authors: "Ashutosh Ghimire, Mohammed Alkurdi, Fathi Amsaad, M. T. Rahman, N. Z. Jhanjhi",
+      venue: "Authorea Preprints",
+      year: "2024",
+      type: "Preprint",
+      featured: false,
+      tags: ["Hardware Security", "Embedded Systems", "AI"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Potential of Unsupervised Deep Learning for Detection of EM Side-Channel Attacks",
+      authors: "Ashutosh Ghimire, H. Singh, N. P. Bhatta, Fathi Amsaad",
+      venue: "IEEE Physical Assurance and Inspection of Electronics, 1-6",
+      year: "2023",
+      type: "Conference",
+      featured: false,
+      tags: ["EM Side-Channel", "Deep Learning", "Hardware Security"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "Enhancing IoT Intrusion Detection Systems Through Adversarial Training",
+      authors: "Karma Gurung, Ashutosh Ghimire, Fathi Amsaad",
+      venue: "International Conference on Secure IoT, Assured and Trusted Computing",
+      year: "2025",
+      type: "Conference",
+      featured: false,
+      tags: ["IoT Security", "Adversarial Training", "Intrusion Detection"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    },
+    {
+      title: "An ML-Assisted Golden-Free Hardware Trojan Localization and Detection Approach for Trusted Microelectronics",
+      authors: "Ashutosh Ghimire",
+      venue: "Wright State University",
+      year: "2024",
+      type: "Thesis",
+      featured: false,
+      tags: ["Hardware Security", "Thesis", "Localization"],
+      link: "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en"
+    }
+  ],
+  experienceHighlights: [
+    {
+      kicker: "Applied ML",
+      title: "End-to-end experimentation",
+      description: "Built data preprocessing, feature extraction, training, evaluation, and robustness-testing workflows for ML projects across security and scientific domains.",
+      tags: ["Python", "ML Pipelines", "Evaluation"]
+    },
+    {
+      kicker: "Trustworthy AI",
+      title: "Security-aware model building",
+      description: "Worked on adversarial robustness, explainability, hardware Trojan detection, IoT security, and model behavior in noisy or adversarial settings.",
+      tags: ["Adversarial ML", "XAI", "Security"]
+    },
+    {
+      kicker: "Software foundation",
+      title: "Engineering beyond notebooks",
+      description: "Brings backend/API experience, Git-based collaboration, Linux/HPC workflows, containers, and performance-focused implementation habits.",
+      tags: ["REST APIs", "Linux", "Docker"]
     }
   ],
   experience: [
@@ -413,7 +654,7 @@ window.siteData = {
       degree: "PhD in Computer Science and Engineering",
       school: "Wright State University",
       dates: "Present",
-      detail: "Research areas: trustworthy AI, hardware security, side-channel analysis, adversarial ML, LLM systems, and AI for security."
+      detail: "Technical focus: trustworthy AI, hardware security, side-channel analysis, adversarial ML, LLM systems, and AI for security."
     },
     {
       degree: "Master of Science in Computer Science",

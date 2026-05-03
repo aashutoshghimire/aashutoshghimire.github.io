@@ -1,7 +1,6 @@
 (function () {
   const data = window.siteData;
   const page = document.body.dataset.page;
-  const root = document.documentElement;
 
   function escapeHtml(value) {
     return String(value)
@@ -18,28 +17,6 @@
 
   function tags(items) {
     return `<div class="tag-row">${items.map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("")}</div>`;
-  }
-
-  function setupTheme() {
-    const saved = localStorage.getItem("theme");
-    const initial = saved || "light";
-    root.dataset.theme = initial;
-    updateThemeButtons(initial);
-
-    document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
-      button.addEventListener("click", () => {
-        const next = root.dataset.theme === "dark" ? "light" : "dark";
-        root.dataset.theme = next;
-        localStorage.setItem("theme", next);
-        updateThemeButtons(next);
-      });
-    });
-  }
-
-  function updateThemeButtons(theme) {
-    document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
-      button.textContent = theme === "dark" ? "Light" : "Dark";
-    });
   }
 
   function setupNav() {
@@ -95,6 +72,18 @@
     `).join("");
   }
 
+  function renderRoleFit() {
+    const target = document.querySelector("[data-role-fit]");
+    if (!target || !data.roleFit) return;
+    target.innerHTML = data.roleFit.map((role) => `
+      <article class="domain-card role-fit-card">
+        <strong>${escapeHtml(role.title)}</strong>
+        <span>${escapeHtml(role.description)}</span>
+        ${tags(role.tags)}
+      </article>
+    `).join("");
+  }
+
   function themeCard(theme) {
     return `
       <article class="theme-card">
@@ -125,9 +114,9 @@
             <span>${escapeHtml(project.status)}</span>
           </div>
           <h3>${escapeHtml(project.title)}</h3>
-          <p><strong>Problem:</strong> ${escapeHtml(project.problem)}</p>
-          <p><strong>Approach:</strong> ${escapeHtml(project.approach)}</p>
-          <p><strong>Result:</strong> ${escapeHtml(project.result)}</p>
+          <p><strong>Challenge:</strong> ${escapeHtml(project.problem)}</p>
+          <p><strong>Build:</strong> ${escapeHtml(project.approach)}</p>
+          <p><strong>Impact:</strong> ${escapeHtml(project.result)}</p>
           ${tags(project.tech.slice(0, 6))}
           <div class="project-links">${links}</div>
         </div>
@@ -142,25 +131,18 @@
     const all = document.querySelector("[data-projects]");
     if (!all) return;
     all.innerHTML = data.projects.map(projectCard).join("");
-    let currentTag = "All";
     let currentQuery = "";
     const countTarget = document.querySelector("[data-project-count]");
     const apply = () => {
       let visible = 0;
       all.querySelectorAll(".project-card").forEach((card) => {
-        const tagList = card.dataset.tags.split("|");
-        const tagMatch = currentTag === "All" || tagList.includes(currentTag.toLowerCase());
         const queryMatch = !currentQuery || card.dataset.search.includes(currentQuery);
-        const show = tagMatch && queryMatch;
+        const show = queryMatch;
         card.hidden = !show;
         if (show) visible += 1;
       });
       if (countTarget) countTarget.textContent = `${visible} project${visible === 1 ? "" : "s"} shown`;
     };
-    setupFilters("[data-project-filters]", data.projectFilters || data.projects.flatMap((project) => project.tags), (tag) => {
-      currentTag = tag;
-      apply();
-    });
     const input = document.querySelector("[data-project-search]");
     if (input) {
       input.addEventListener("input", () => {
@@ -169,6 +151,17 @@
       });
     }
     apply();
+  }
+
+  function renderProjectDomains() {
+    const target = document.querySelector("[data-project-domains]");
+    if (!target || !data.projectDomains) return;
+    target.innerHTML = data.projectDomains.map((domain) => `
+      <article class="domain-card">
+        <strong>${escapeHtml(domain.title)}</strong>
+        <span>${escapeHtml(domain.description)}</span>
+      </article>
+    `).join("");
   }
 
   function publicationCard(publication) {
@@ -199,19 +192,13 @@
     const all = document.querySelector("[data-publications]");
     if (!all) return;
     all.innerHTML = data.publications.map(publicationCard).join("");
-    let currentTag = "All";
     let currentQuery = "";
     const apply = () => {
       all.querySelectorAll(".publication-card").forEach((card) => {
-        const tagMatch = currentTag === "All" || card.dataset.tags.split("|").includes(currentTag.toLowerCase());
         const queryMatch = !currentQuery || card.dataset.search.includes(currentQuery);
-        card.hidden = !(tagMatch && queryMatch);
+        card.hidden = !queryMatch;
       });
     };
-    setupFilters("[data-publication-filters]", data.publicationFilters || data.publications.flatMap((publication) => publication.tags), (tag) => {
-      currentTag = tag;
-      apply();
-    });
     const input = document.querySelector("[data-publication-search]");
     if (input) {
       input.addEventListener("input", () => {
@@ -237,6 +224,18 @@
   }
 
   function renderExperience() {
+    const highlights = document.querySelector("[data-experience-highlights]");
+    if (highlights && data.experienceHighlights) {
+      highlights.innerHTML = data.experienceHighlights.map((item) => `
+        <article class="experience-highlight-card">
+          <span>${escapeHtml(item.kicker)}</span>
+          <h3>${escapeHtml(item.title)}</h3>
+          <p>${escapeHtml(item.description)}</p>
+          ${tags(item.tags)}
+        </article>
+      `).join("");
+    }
+
     const timeline = document.querySelector("[data-experience-timeline]");
     if (timeline) {
       timeline.innerHTML = data.experience.map((item) => `
@@ -294,7 +293,7 @@
       const formData = new FormData(form);
       const name = formData.get("name") || "";
       const email = formData.get("email") || "";
-      const topic = formData.get("topic") || "Research collaboration";
+      const topic = formData.get("topic") || "Internship or job opportunity";
       const message = formData.get("message") || "";
       const body = [
         `Name: ${name}`,
@@ -312,12 +311,13 @@
     });
   }
 
-  setupTheme();
   setupNav();
   setupYear();
   renderLinks();
   renderStats();
+  renderRoleFit();
   renderThemes();
+  renderProjectDomains();
   renderProjects();
   renderPublications();
   renderExperience();

@@ -1277,3 +1277,345 @@ body {
     font-size: 0.92rem;
   }
 }
+
+/* Light industry-facing AI/ML portfolio template, no dark-mode dependency. */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: light;
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --surface-2: #f0f7f4;
+  --text: #1f2a37;
+  --muted: #637487;
+  --line: #dce7e2;
+  --line-strong: #b7d3cc;
+  --accent: #138f86;
+  --accent-2: #c86d42;
+  --accent-3: #3c8f62;
+  --accent-dark: #0c6f69;
+  --shadow: 0 14px 35px rgba(36, 64, 75, 0.09);
+}
+
+body {
+  background:
+    linear-gradient(180deg, rgba(240, 247, 244, 0.8), rgba(251, 250, 247, 0) 420px),
+    var(--bg);
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+}
+
+.nav-shell {
+  min-height: 78px;
+}
+
+.nav-menu a {
+  font-size: 0.98rem;
+}
+
+.nav-menu a.is-active {
+  background: #f1f8f6;
+  border-color: var(--line-strong);
+  color: var(--accent-dark);
+}
+
+.hero {
+  min-height: auto;
+  padding: 78px 0 64px;
+  background: linear-gradient(135deg, #fffaf2, #eff8f5);
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-bg,
+.hero-overlay {
+  display: none;
+}
+
+.hero-content {
+  max-width: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.42fr);
+  gap: 44px;
+  align-items: center;
+  color: var(--text);
+}
+
+.hero-text {
+  max-width: 900px;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5.8vw, 5rem);
+}
+
+.hero-copy {
+  max-width: 820px;
+  color: var(--muted);
+}
+
+.hero-profile-card {
+  min-height: 420px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.78)),
+    url("../images/thesis-localization.png") center / cover;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.hero-profile-card strong {
+  font-size: 1.35rem;
+}
+
+.hero-profile-card span {
+  color: var(--muted);
+}
+
+.hero-domain-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.hero-domain-list span {
+  min-height: 28px;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--accent-dark);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.button-secondary,
+.button-ghost,
+.social-link {
+  border-color: var(--line-strong);
+  color: var(--text);
+  background: #ffffff;
+}
+
+.page-hero {
+  min-height: 330px;
+  align-items: center;
+  color: var(--text);
+  background: linear-gradient(135deg, #fffaf2, #edf8f5);
+  border-bottom: 1px solid var(--line);
+}
+
+.page-hero-content {
+  padding: 72px 0;
+}
+
+.page-hero::before {
+  inset: 18px 3% 18px 52%;
+  opacity: 0.2;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page-hero::after {
+  background: linear-gradient(90deg, rgba(255, 250, 242, 0.98), rgba(255, 250, 242, 0.78) 48%, rgba(255, 250, 242, 0.08));
+}
+
+.page-hero p {
+  max-width: 760px;
+  color: var(--muted);
+}
+
+.section {
+  padding: 78px 0;
+}
+
+.section-muted {
+  background: #f3f8f5;
+}
+
+.stat-card,
+.theme-card,
+.project-card,
+.publication-card,
+.timeline-item,
+.education-card,
+.skill-card,
+.award-card,
+.contact-panel,
+.contact-form,
+.domain-card,
+.experience-highlight-card {
+  border-radius: 12px;
+}
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0 24px;
+}
+
+.domain-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.domain-card strong,
+.domain-card span {
+  display: block;
+}
+
+.domain-card strong {
+  color: var(--accent-dark);
+}
+
+.domain-card span {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.role-fit-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.domain-card .tag-row {
+  margin-top: 14px;
+}
+
+.domain-card .tag {
+  display: inline-flex;
+  margin-top: 0;
+  font-size: 0.82rem;
+}
+
+.project-controls,
+.publication-controls {
+  max-width: 620px;
+}
+
+.filter-row {
+  display: none;
+}
+
+.search-box input {
+  width: min(100%, 620px);
+  background: #ffffff;
+}
+
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.project-grid-featured {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card img {
+  aspect-ratio: 16 / 8.5;
+  object-fit: contain;
+  padding: 14px;
+}
+
+.publication-card {
+  grid-template-columns: 1fr minmax(76px, auto);
+  box-shadow: none;
+  border-left: 5px solid color-mix(in srgb, var(--accent) 38%, var(--line));
+}
+
+.publication-list-compact .publication-card:nth-child(n + 5) {
+  display: none;
+}
+
+.experience-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.experience-highlight-card {
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.experience-highlight-card > span {
+  color: var(--accent-dark);
+  font-weight: 800;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.experience-highlight-card h3 {
+  margin-top: 10px;
+}
+
+.experience-highlight-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.timeline {
+  gap: 14px;
+}
+
+.timeline-item {
+  box-shadow: none;
+  border-left: 5px solid color-mix(in srgb, var(--accent-3) 40%, var(--line));
+}
+
+.timeline-item ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline-item li {
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfaf7;
+}
+
+@media (max-width: 980px) {
+  .hero-content,
+  .domain-grid,
+  .experience-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid,
+  .project-grid-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero {
+    padding: 52px 0;
+  }
+
+  .hero-profile-card {
+    min-height: 320px;
+  }
+}
