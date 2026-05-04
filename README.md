@@ -19,6 +19,7 @@ Static multi-page research portfolio for GitHub Pages.
 - `assets/css/styles.css` - visual system and responsive layout
 
 
+
 ## Updating Content
 
 Update the relevant HTML page for project, experience, research, and contact copy.
