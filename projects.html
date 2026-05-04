@@ -1,76 +1,247 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects | Ashutosh Ghimire</title>
-    <meta name="description" content="Industry-facing AI/ML project portfolio for Ashutosh Ghimire, including model pipelines, security ML, LLM-assisted systems, hyperdimensional computing, software security, and scientific ML.">
-    <meta property="og:title" content="Projects - Ashutosh Ghimire">
-    <meta property="og:description" content="AI/ML projects with implementation-focused summaries, technical stack, and impact.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/thesis-localization.png">
-    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/css/styles.css?v=4">
-    <script defer src="assets/js/data.js?v=4"></script>
-    <script defer src="assets/js/app.js?v=4"></script>
-  </head>
-  <body data-page="projects">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header" data-header>
-      <nav class="nav-shell" aria-label="Main navigation">
-        <a class="brand" href="index.html">
-          <span class="brand-mark">AG</span>
-          <span><strong>Ashutosh Ghimire</strong><small>AI/ML PhD Candidate</small></span>
-        </a>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
-        <div class="nav-menu" id="site-menu" data-nav-menu>
-          <a href="index.html">Home</a>
-          <a href="projects.html">Projects</a>
-          <a href="experience.html">Experience</a>
-          <a href="publications.html">Publications</a>
-          <a href="research.html">Research</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="page-hero projects-hero">
-        <div class="container page-hero-content">
-          <p class="eyebrow">Projects</p>
-          <h1>Applied AI/ML projects.</h1>
-          <p>A selection of projects from my PhD and engineering work, spanning security ML, LLM-assisted systems, HDC anomaly detection, and scientific computing. I include paper figures where they help explain the technical idea.</p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-heading section-heading-stack">
-            <div>
-              <p class="eyebrow">Browse</p>
-              <h2>Project areas.</h2>
-              <p class="section-note">Search by method, tool, paper title, or application area. The domain cards give a quick map of the work.</p>
-            </div>
-            <div class="project-controls">
-              <label class="search-box">
-                <span class="sr-only">Search projects</span>
-                <input type="search" data-project-search placeholder="Search projects, methods, or tools">
-              </label>
-            </div>
-          </div>
-          <div class="domain-grid" data-project-domains></div>
-          <p class="result-count" data-project-count aria-live="polite"></p>
-          <div class="project-grid" data-projects></div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div><strong>Ashutosh Ghimire</strong><p>AI/ML projects spanning security, systems, LLMs, HDC, and scientific ML.</p></div>
-        <div class="footer-links" data-footer-links></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Ashutosh Ghimire</title>
+  <meta name="description" content="Eleven AI/ML project case studies by Ashutosh Ghimire — hardware security, adversarial ML, LLM systems, HDC, drug discovery. With problem, approach, results, and tech stack.">
+  <meta name="author" content="Ashutosh Ghimire">
+  <meta name="keywords" content="Ashutosh Ghimire, AI ML PhD, machine learning engineer, applied scientist intern, trustworthy AI, hardware security, adversarial machine learning, LLM systems, Wright State University, Python, PyTorch">
+  <meta property="og:title" content="Projects · Ashutosh Ghimire">
+  <meta property="og:description" content="Eleven AI/ML project case studies by Ashutosh Ghimire — hardware security, adversarial ML, LLM systems, HDC, drug discovery. With problem, approach, results, and tech stack.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-research.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects · Ashutosh Ghimire">
+  <meta name="twitter:description" content="Eleven AI/ML project case studies by Ashutosh Ghimire — hardware security, adversarial ML, LLM systems, HDC, drug discovery. With problem, approach, results, and tech stack.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Ashutosh Ghimire — home">
+        <span class="brand-mark" aria-hidden="true">AG</span>
+        <span class="brand-meta">
+          <strong>Ashutosh Ghimire</strong>
+          <small>AI / ML PhD Candidate</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span aria-hidden="true">≡</span> Menu
+      </button>
+      <ul class="nav-list" id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+<li><a href="projects.html" class="is-active" aria-current="page">Projects</a></li>
+<li><a href="experience.html">Experience</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <span class="eyebrow">Projects</span>
+        <h1>Applied AI / ML projects.</h1>
+        <p class="lead">Eleven projects spanning hardware security, adversarial ML, LLM-assisted explainability, hyperdimensional computing, drug discovery, and ML systems. Each entry shows the problem, approach, result, and stack.</p>
       </div>
-      <div class="container footer-bottom"><span>Copyright <span data-year></span> Ashutosh Ghimire.</span><span>Last curated May 2026.</span></div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="search-bar">
+          <input type="search" id="proj-search" placeholder="Search projects, methods, tools, papers…" data-filter-target=".project-card" aria-label="Search projects">
+        </div>
+        <div class="filter-chips">
+          <button class="chip" data-filter-chip-for="proj-search" data-filter-tag="hardware security">Hardware Security</button>
+<button class="chip" data-filter-chip-for="proj-search" data-filter-tag="adversarial ml">Adversarial ML</button>
+<button class="chip" data-filter-chip-for="proj-search" data-filter-tag="trustworthy ai">Trustworthy AI</button>
+<button class="chip" data-filter-chip-for="proj-search" data-filter-tag="llms">LLMs</button>
+<button class="chip" data-filter-chip-for="proj-search" data-filter-tag="drug discovery">Drug Discovery</button>
+<button class="chip" data-filter-chip-for="proj-search" data-filter-tag="hdc">HDC</button>
+<button class="chip" data-filter-chip-for="proj-search" data-filter-tag="iot security">IoT Security</button>
+<button class="chip" data-filter-chip-for="proj-search" data-filter-tag="federated learning">Federated Learning</button>
+        </div>
+
+        <div class="projects-grid">
+        <article class="project-card" data-tags="hardware security ai side-channel fpga" data-search="golden-free ai-assisted hardware trojan detection ai for hardware security hardware security ai side-channel fpga python scikit-learn numpy pandas fpga ring oscillator networks">
+          <div class="project-figure project-figure-large"><img src="assets/images/thesis-localization.png" alt="Figure from Golden-Free AI-Assisted Hardware Trojan Detection" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Hardware Security</span><span class="tag">AI</span><span class="tag">Side-Channel</span><span class="tag">FPGA</span></div>
+          <h3>Golden-Free AI-Assisted Hardware Trojan Detection</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">AI for Hardware Security · ACM JETC, 2025</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> Traditional detection often relies on golden reference chips or destructive reverse engineering, which can be unavailable or impractical for industrial-scale validation.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Built ML pipelines using side-channel data from Ring Oscillator Networks, feature extraction, unsupervised clustering, dimensionality analysis, and anomaly detection.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> Published ACM JETC work contributes a golden-free unsupervised ML-assisted approach for IC hardware Trojan detection.</p>
+          <div class="stack"><strong>Stack:</strong> Python · scikit-learn · NumPy · pandas · FPGA · Ring Oscillator Networks</div>
+          <div class="links"><a href="https://doi.org/10.1145/3748652" target="_blank" rel="noopener">ACM DOI →</a> </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="hardware security image processing signal processing unsupervised ml" data-search="ai-enabled image processing for hardware trojan identification ai + signal/image processing hardware security image processing signal processing unsupervised ml python scikit-learn dsp image processing fpga">
+          <div class="project-figure project-figure-large"><img src="assets/images/integration-main-model.png" alt="Figure from AI-Enabled Image Processing for Hardware Trojan Identification" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Hardware Security</span><span class="tag">Image Processing</span><span class="tag">Signal Processing</span><span class="tag">Unsupervised ML</span></div>
+          <h3>AI-Enabled Image Processing for Hardware Trojan Identification</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">AI + Signal/Image Processing · Integration, 2026</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> Stealthy IC modifications threaten semiconductor supply-chain trust, while functional testing and reverse engineering are costly to scale.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Converted side-channel data into image-like representations and used image processing with unsupervised machine learning to cluster Trojan behavior.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> The publisher page reports 95% hardware Trojan detection accuracy using real hardware side-channel data.</p>
+          <div class="stack"><strong>Stack:</strong> Python · scikit-learn · DSP · Image Processing · FPGA</div>
+          <div class="links"><a href="https://doi.org/10.1016/j.vlsi.2025.102628" target="_blank" rel="noopener">ScienceDirect →</a> </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="adversarial ml hardware security trustworthy ai robustness" data-search="adversarial attack resilient ml-assisted golden free hardware trojan detection hardware security / adversarial ml adversarial ml hardware security trustworthy ai robustness python art scikit-learn adversarial ml clustering pandas">
+          <div class="project-figure project-figure-large"><img src="assets/images/microelectronics-robustness-results.png" alt="Figure from Adversarial Attack Resilient ML-Assisted Golden Free Hardware Trojan Detection" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Adversarial ML</span><span class="tag">Hardware Security</span><span class="tag">Trustworthy AI</span><span class="tag">Robustness</span></div>
+          <h3>Adversarial Attack Resilient ML-Assisted Golden Free Hardware Trojan Detection</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">Hardware Security / Adversarial ML · Microelectronics, 2026</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> Security models that perform well under clean conditions can fail under perturbations, process noise, or adaptive attacks.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Evaluated golden-reference-free hardware Trojan detection under adversarial attack scenarios and robustness-focused model variants.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> Published Microelectronics work connects adversarial robustness with practical side-channel hardware Trojan detection.</p>
+          <div class="stack"><strong>Stack:</strong> Python · ART · scikit-learn · Adversarial ML · Clustering · pandas</div>
+          <div class="links"><a href="https://doi.org/10.3390/microelectronics2010002" target="_blank" rel="noopener">Microelectronics DOI →</a> </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="hardware security synthetic data smote tvae adversarial ml" data-search="synthetic data augmentation for robust hardware trojan detection journal of electronic testing / under submission hardware security synthetic data smote tvae adversarial ml python smote tvae svm adversarial training side-channel data">
+          <div class="project-figure project-figure-large"><img src="assets/images/jet-framework-model.png" alt="Figure from Synthetic Data Augmentation for Robust Hardware Trojan Detection" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Hardware Security</span><span class="tag">Synthetic Data</span><span class="tag">SMOTE</span><span class="tag">TVAE</span><span class="tag">Adversarial ML</span></div>
+          <h3>Synthetic Data Augmentation for Robust Hardware Trojan Detection</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">Journal of Electronic Testing / Under Submission · Manuscript under submission</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> Hardware Trojan datasets are often small, imbalanced, and vulnerable to adversarial perturbations, making robust evaluation difficult.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Combined feature-space attack analysis with synthetic data augmentation and adversarially trained models for side-channel Trojan detection.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> Prepared as under-submission work for Journal of Electronic Testing, extending the hardware-security research story beyond clean-data detection.</p>
+          <div class="stack"><strong>Stack:</strong> Python · SMOTE · TVAE · SVM · Adversarial Training · Side-Channel Data</div>
+          <div class="links"><span style="color:var(--ink-muted)">No public link yet</span></div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="llms healthcare ai rubric scoring human-centered ai" data-search="clinical communication and llm-based heart rubric scoring healthcare ai / llms llms healthcare ai rubric scoring human-centered ai python pytorch transformers longformer sbert json schemas">
+          <div class="project-figure project-figure-large"><img src="assets/images/clinical-ai.png" alt="Figure from Clinical Communication and LLM-Based HEART Rubric Scoring" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">LLMs</span><span class="tag">Healthcare AI</span><span class="tag">Rubric Scoring</span><span class="tag">Human-Centered AI</span></div>
+          <h3>Clinical Communication and LLM-Based HEART Rubric Scoring</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">Healthcare AI / LLMs · Active AI prototype</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> Medical error disclosure training needs transparent, clinically meaningful assessment of resident-patient conversations.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Developed an AI-compatible HEART rubric schema with transcript-only 0-3 scoring, evidence spans, and validation planning against human ratings.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> Positioned as an interdisciplinary research MVP and collaboration-ready prototype, not a deployed clinical product.</p>
+          <div class="stack"><strong>Stack:</strong> Python · PyTorch · Transformers · Longformer · SBERT · JSON Schemas</div>
+          <div class="links"><a href="contact.html" target="_blank" rel="noopener">Contact →</a> </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="drug discovery deep learning self-attention bioinformatics" data-search="csatdta: drug-target affinity prediction ai for drug discovery drug discovery deep learning self-attention bioinformatics python tensorflow keras cnns self-attention tfrecord">
+          <div class="project-figure project-figure-large"><img src="assets/images/csatdta.png" alt="Figure from CSatDTA: Drug-Target Affinity Prediction" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Drug Discovery</span><span class="tag">Deep Learning</span><span class="tag">Self-Attention</span><span class="tag">Bioinformatics</span></div>
+          <h3>CSatDTA: Drug-Target Affinity Prediction</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">AI for Drug Discovery · IJMS, 2022</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> Early-stage drug discovery needs sequence-based methods that capture local and long-range interactions in molecular and protein sequences.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Developed CSatDTA, a convolutional self-attention model for drug and target sequence affinity prediction.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> The IJMS paper reports that CSatDTA outperforms previous sequence-based approaches on benchmark datasets.</p>
+          <div class="stack"><strong>Stack:</strong> Python · TensorFlow · Keras · CNNs · Self-Attention · TFRecord</div>
+          <div class="links"><a href="https://doi.org/10.3390/ijms23158453" target="_blank" rel="noopener">MDPI DOI →</a> </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="hdc anomaly detection iot security edge ai" data-search="hyperdimensional computing for iot anomaly detection hdc / cybersecurity hdc anomaly detection iot security edge ai python hdc ml evaluation nsl-kdd anomaly detection">
+          <div class="project-figure project-figure-large"><img src="assets/images/hyperdimention%20computing.jpg" alt="Figure from Hyperdimensional Computing for IoT Anomaly Detection" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">HDC</span><span class="tag">Anomaly Detection</span><span class="tag">IoT Security</span><span class="tag">Edge AI</span></div>
+          <h3>Hyperdimensional Computing for IoT Anomaly Detection</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">HDC / Cybersecurity · IEEE Access / SATC</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> IoT intrusion detection needs efficient processing of high-dimensional network data while detecting known and unknown attack patterns.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Applied hyperdimensional representations to network anomaly detection, including NSL-KDD and hybrid HDC-based frameworks.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> Related public records describe HDC-based IoT anomaly detection and D2H-AD as a hybrid model for advanced anomaly detection.</p>
+          <div class="stack"><strong>Stack:</strong> Python · HDC · ML Evaluation · NSL-KDD · Anomaly Detection</div>
+          <div class="links"><a href="https://arxiv.org/abs/2503.03031" target="_blank" rel="noopener">arXiv →</a> <a href="https://doi.org/10.1109/ACCESS.2026.3677763" target="_blank" rel="noopener">IEEE DOI →</a> </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="llms xai iot security critical infrastructure" data-search="llm-assisted explainable iot systems for critical infrastructure llms / xai / iot security llms xai iot security critical infrastructure python llm prompting autoencoders xai iot datasets">
+          <div class="project-figure project-figure-large"><img src="assets/images/llm-iot.png" alt="Figure from LLM-Assisted Explainable IoT Systems for Critical Infrastructure" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">LLMs</span><span class="tag">XAI</span><span class="tag">IoT Security</span><span class="tag">Critical Infrastructure</span></div>
+          <h3>LLM-Assisted Explainable IoT Systems for Critical Infrastructure</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">LLMs / XAI / IoT Security · SATC, 2025</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> Security monitoring often generates anomaly scores and alerts that are difficult for human analysts to interpret.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Combined numerical anomaly detection with LLM-assisted preprocessing and explanation generation for human interpretability.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> Conference work explores LLM-assisted explainability for cybersecurity in critical infrastructure settings.</p>
+          <div class="stack"><strong>Stack:</strong> Python · LLM Prompting · Autoencoders · XAI · IoT Datasets</div>
+          <div class="links"><a href="https://doi.org/10.1109/SATC65530.2025.11137104" target="_blank" rel="noopener">IEEE DOI →</a> </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="software security reverse engineering survey ai" data-search="ai for reverse engineering and software security survey ai for software security software security reverse engineering survey ai literature review security analysis reverse engineering ai systems">
+          <div class="project-figure project-figure-large"><img src="assets/images/Reverse%20engineering.jpg" alt="Figure from AI for Reverse Engineering and Software Security Survey" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Software Security</span><span class="tag">Reverse Engineering</span><span class="tag">Survey</span><span class="tag">AI</span></div>
+          <h3>AI for Reverse Engineering and Software Security Survey</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">AI for Software Security · IEEE Access, 2025</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> Reverse engineering and software analysis are labor-intensive, yet increasingly supported by AI systems.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Surveyed AI applications in decompilation, malware analysis, binary analysis, vulnerability discovery, and security automation.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> Published in IEEE Access with a taxonomy of AI-assisted reverse engineering and software security research.</p>
+          <div class="stack"><strong>Stack:</strong> Literature Review · Security Analysis · Reverse Engineering · AI Systems</div>
+          <div class="links"><a href="https://doi.org/10.1109/ACCESS.2025.3593456" target="_blank" rel="noopener">IEEE DOI →</a> </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="federated learning privacy ai hardware distributed ml" data-search="secure and privacy-aware ai hardware with federated learning distributed ai / privacy federated learning privacy ai hardware distributed ml python federated learning distributed systems ai hardware">
+          <div class="project-figure project-figure-large"><img src="assets/images/hero-research.png" alt="Figure from Secure and Privacy-Aware AI Hardware with Federated Learning" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Federated Learning</span><span class="tag">Privacy</span><span class="tag">AI Hardware</span><span class="tag">Distributed ML</span></div>
+          <h3>Secure and Privacy-Aware AI Hardware with Federated Learning</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">Distributed AI / Privacy · DCAS, 2023</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> Security-aware AI hardware must balance privacy, distributed learning, and practical implementation constraints.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Implemented secure and privacy-aware AI hardware workflows using distributed federated learning concepts.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> Conference publication and graduate research direction in distributed privacy-aware AI systems.</p>
+          <div class="stack"><strong>Stack:</strong> Python · Federated Learning · Distributed Systems · AI Hardware</div>
+          <div class="links"><a href="https://scholar.google.com/citations?user=mhTDRysAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar →</a> </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="parallel ml multicore performance systems" data-search="parallel supervised ml in multicore environments systems / ml performance parallel ml multicore performance systems python parallel computing ml pipelines performance evaluation">
+          <div class="project-figure project-figure-large"><img src="assets/images/hdc-anomaly.png" alt="Figure from Parallel Supervised ML in Multicore Environments" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Parallel ML</span><span class="tag">Multicore</span><span class="tag">Performance</span><span class="tag">Systems</span></div>
+          <h3>Parallel Supervised ML in Multicore Environments</h3>
+          <p style="font-family:var(--mono);font-size:0.78rem;color:var(--ink-muted);margin-bottom:1rem;letter-spacing:0.05em;">Systems / ML Performance · MLKE, 2024</p>
+          <p class="summary"><strong style="color:var(--ink);">Problem.</strong> Large ML experiments need reproducible, faster execution across multicore environments.</p>
+          <p class="summary"><strong style="color:var(--ink);">Approach.</strong> Designed a parallel approach to improve supervised ML performance in a multicore setting.</p>
+          <p class="summary"><strong style="color:var(--ink);">Result.</strong> Published work supports Ashutosh&#x27;s builder credibility across ML experimentation and systems optimization.</p>
+          <div class="stack"><strong>Stack:</strong> Python · Parallel Computing · ML Pipelines · Performance Evaluation</div>
+          <div class="links"><a href="https://scholar.google.com/citations?user=mhTDRysAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar →</a> </div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Ashutosh Ghimire</strong>
+          <p style="margin-top:0.5rem;color:var(--ink-muted);font-size:0.92rem;">AI / ML PhD candidate at Wright State University. Open to research internships and full-time roles in AI research, ML engineering, and applied science.</p>
+          <p style="font-family:var(--mono);font-size:0.82rem;color:var(--ink-muted);margin-top:0.75rem;"><a href="mailto:ashutosh.ghimire@wright.edu">ashutosh.ghimire@wright.edu</a></p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="publications.html">Publications</a></li><li><a href="research.html">Research</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div>
+          <h4>Profiles</h4>
+          <ul><li><a href="https://scholar.google.com/citations?user=mhTDRysAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li><li><a href="https://orcid.org/0000-0001-6210-1219" target="_blank" rel="noopener">ORCID</a></li><li><a href="https://www.linkedin.com/in/ashutoshghimire" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/aashutoshghimire" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://people.wright.edu/ashutosh.ghimire" target="_blank" rel="noopener">Wright State</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Ashutosh Ghimire</span>
+        <span>Last updated May 2026</span>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
 </html>

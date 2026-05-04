@@ -1,142 +1,317 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ashutosh Ghimire | AI/ML Portfolio for Internships and Jobs</title>
-    <meta name="description" content="Industry-facing AI/ML portfolio of Ashutosh Ghimire, a PhD candidate building machine learning pipelines, trustworthy AI systems, hardware security models, LLM-assisted tools, and applied scientific ML projects.">
-    <meta name="keywords" content="Ashutosh Ghimire, AI ML intern, machine learning engineer, applied scientist intern, trustworthy AI, hardware security, adversarial machine learning, LLM systems, Python, PyTorch, TensorFlow, scikit-learn, Wright State University">
-    <meta property="og:title" content="Ashutosh Ghimire - AI/ML PhD Candidate Portfolio">
-    <meta property="og:description" content="Projects, technical skills, experience, and publications for AI/ML internships and industry research roles.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/hero-research.png">
-    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/css/styles.css?v=4">
-    <script defer src="assets/js/data.js?v=4"></script>
-    <script defer src="assets/js/app.js?v=4"></script>
-  </head>
-  <body data-page="home">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header" data-header>
-      <nav class="nav-shell" aria-label="Main navigation">
-        <a class="brand" href="index.html" aria-label="Ashutosh Ghimire home">
-          <span class="brand-mark">AG</span>
-          <span>
-            <strong>Ashutosh Ghimire</strong>
-            <small>AI/ML PhD Candidate</small>
-          </span>
-        </a>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
-        <div class="nav-menu" id="site-menu" data-nav-menu>
-          <a href="index.html">Home</a>
-          <a href="projects.html">Projects</a>
-          <a href="experience.html">Experience</a>
-          <a href="publications.html">Publications</a>
-          <a href="research.html">Research</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="hero home-hero" aria-labelledby="hero-title">
-        <div class="hero-bg" role="img" aria-label="Abstract research visual with circuitry, molecular nodes, waveforms, and AI model layers"></div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-          <div class="hero-text">
-            <p class="eyebrow">AI/ML PhD Candidate at Wright State University</p>
-            <h1 id="hero-title">Applied machine learning for trustworthy, security-aware systems.</h1>
-            <p class="hero-copy">I work across hardware security, adversarial ML, LLM-assisted systems, anomaly detection, and scientific computing. My projects combine research depth with practical implementation, reproducible experiments, and clear technical communication.</p>
-            <div class="hero-actions" aria-label="Primary actions">
-              <a class="button button-primary" href="projects.html">View Projects</a>
-              <a class="button button-secondary" href="experience.html">Experience and Skills</a>
-              <a class="button button-secondary" href="publications.html">Publications</a>
-              <a class="button button-ghost" href="assets/docs/Ashutosh_Ghimire_CV.pdf">Download CV</a>
-            </div>
-            <div class="hero-links" data-social-links></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashutosh Ghimire — AI/ML PhD Candidate | Portfolio</title>
+  <meta name="description" content="Ashutosh Ghimire — AI/ML PhD candidate at Wright State University. Trustworthy AI, hardware security, adversarial ML, LLM systems, and applied scientific ML. 33 papers, open to research internships.">
+  <meta name="author" content="Ashutosh Ghimire">
+  <meta name="keywords" content="Ashutosh Ghimire, AI ML PhD, machine learning engineer, applied scientist intern, trustworthy AI, hardware security, adversarial machine learning, LLM systems, Wright State University, Python, PyTorch">
+  <meta property="og:title" content="Ashutosh Ghimire — AI/ML PhD Candidate | Portfolio">
+  <meta property="og:description" content="Ashutosh Ghimire — AI/ML PhD candidate at Wright State University. Trustworthy AI, hardware security, adversarial ML, LLM systems, and applied scientific ML. 33 papers, open to research internships.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-research.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ashutosh Ghimire — AI/ML PhD Candidate | Portfolio">
+  <meta name="twitter:description" content="Ashutosh Ghimire — AI/ML PhD candidate at Wright State University. Trustworthy AI, hardware security, adversarial ML, LLM systems, and applied scientific ML. 33 papers, open to research internships.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Ashutosh Ghimire — home">
+        <span class="brand-mark" aria-hidden="true">AG</span>
+        <span class="brand-meta">
+          <strong>Ashutosh Ghimire</strong>
+          <small>AI / ML PhD Candidate</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span aria-hidden="true">≡</span> Menu
+      </button>
+      <ul class="nav-list" id="primary-menu">
+        <li><a href="index.html" class="is-active" aria-current="page">Home</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="experience.html">Experience</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="availability">Available for Summer 2026 / 2027 ML research internships</span>
+          <span class="eyebrow">AI / ML PhD Candidate · Wright State University</span>
+          <h1 class="hero-title">Building <em>trustworthy</em> machine learning for systems that have to actually work.</h1>
+          <p class="hero-lead">PhD candidate at Wright State University, working at the intersection of hardware security, adversarial ML, LLM-assisted systems, hyperdimensional computing, and applied scientific ML — with <!--AUTO:CITATIONS-->231<!--/AUTO:CITATIONS-->+ Google Scholar citations across <!--AUTO:PAPERS-->33<!--/AUTO:PAPERS--> peer-reviewed papers as of <!--AUTO:UPDATED-->2026-05-04<!--/AUTO:UPDATED-->.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="projects.html">View projects <span class="arrow">→</span></a>
+            <a class="btn btn-ghost" href="assets/docs/Ashutosh_Ghimire_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=mhTDRysAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
           </div>
-          <aside class="hero-profile-card" aria-label="Profile summary">
-            <img class="profile-photo profile-photo-large" src="assets/images/profile.jpg" alt="Portrait of Ashutosh Ghimire">
-            <strong>Ashutosh Ghimire</strong>
-            <span>AI/ML, security, systems, and scientific computing</span>
-            <div class="hero-domain-list">
-              <span>Python ML pipelines</span>
-              <span>Trustworthy AI</span>
-              <span>Security ML</span>
-              <span>Applied LLMs</span>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section section-tight">
-        <div class="container">
-          <div class="stat-grid" data-profile-stats></div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container section-grid">
-          <div class="section-intro">
-            <p class="eyebrow">Technical Profile</p>
-            <h2>Applied ML, security, and systems work.</h2>
-            <p>I am interested in models and software that hold up under real constraints: noisy data, limited labels, reproducibility, and domain-specific evaluation. The work below reflects that mix of research, engineering, and practical experimentation.</p>
-            <a class="text-link" href="experience.html">See experience and skills</a>
+          <div class="hero-tags">
+            <span>Python</span><span>Go</span><span>PyTorch</span><span>Adversarial ML</span><span>LLM Systems</span><span>FPGA Side-Channel ML</span><span>SLURM / HPC</span>
           </div>
-          <div class="domain-grid role-fit-grid" data-role-fit></div>
         </div>
-      </section>
-
-      <section class="section section-muted">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Featured Projects</p>
-              <h2>Technical work with clear build and impact.</h2>
-            </div>
-            <a class="button button-compact" href="projects.html">All Projects</a>
-          </div>
-          <div class="project-grid project-grid-featured" data-featured-projects></div>
+        <div class="hero-portrait reveal">
+          <img src="assets/images/profile.jpg" alt="Portrait of Ashutosh Ghimire" loading="eager">
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Publications</p>
-              <h2>Peer-reviewed credibility behind the projects.</h2>
-            </div>
-            <a class="button button-compact" href="publications.html">Publication Page</a>
-          </div>
-          <div class="publication-list publication-list-compact" data-featured-publications></div>
-        </div>
-      </section>
-
-      <section class="section section-muted">
-        <div class="container about-band">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
           <div>
-            <p class="eyebrow">About</p>
-            <h2>PhD student with a software engineering backbone.</h2>
-            <p>Ashutosh Ghimire is a PhD candidate in Computer Science and Engineering at Wright State University. He brings a mix of research depth and hands-on engineering: Python ML pipelines, trustworthy AI evaluation, security datasets, backend/API experience, HPC workflows, and interdisciplinary AI projects.</p>
+            <span class="eyebrow">What I work on</span>
+            <h2>Applied ML, security, and systems work.</h2>
           </div>
-          <img class="profile-photo" src="assets/images/profile.jpg" alt="Portrait of Ashutosh Ghimire">
+          <p>Models and software that hold up under real constraints: noisy data, limited labels, reproducibility, adversarial conditions, and domain-specific evaluation.</p>
         </div>
-      </section>
-    </main>
+        <div class="theme-grid">
+          <div class="theme reveal">
+            <div class="theme-num">Theme 01</div>
+            <h3>Trustworthy AI and Adversarial ML</h3>
+            <p>Evaluating and improving ML behavior under attack, uncertainty, noisy measurements, and distribution shift.</p>
+          </div>
+<div class="theme reveal">
+            <div class="theme-num">Theme 02</div>
+            <h3>AI for Hardware Security</h3>
+            <p>Building ML pipelines on side-channel measurements for golden-reference-free hardware Trojan detection and localization.</p>
+          </div>
+<div class="theme reveal">
+            <div class="theme-num">Theme 03</div>
+            <h3>LLM-Assisted Explainable Systems</h3>
+            <p>Combining numerical models with LLM-based explanation layers for cybersecurity and human-centered assessment workflows.</p>
+          </div>
+<div class="theme reveal">
+            <div class="theme-num">Theme 04</div>
+            <h3>Hyperdimensional Computing</h3>
+            <p>Testing brain-inspired high-dimensional representations for efficient anomaly detection in IoT, edge AI, and data streams.</p>
+          </div>
+<div class="theme reveal">
+            <div class="theme-num">Theme 05</div>
+            <h3>AI for Drug Discovery</h3>
+            <p>Using deep learning and attention mechanisms to model drug-target interactions and support scientific ML workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Featured projects</span>
+            <h2>Selected work, with build and impact.</h2>
+          </div>
+          <a class="btn btn-link" href="projects.html">All 11 projects →</a>
+        </div>
+        <div class="projects-grid">
+        <article class="project-card" data-tags="hardware security ai side-channel fpga" data-search="golden-free ai-assisted hardware trojan detection ai for hardware security hardware security ai side-channel fpga">
+          <div class="project-figure"><img src="assets/images/thesis-localization.png" alt="Figure from Golden-Free AI-Assisted Hardware Trojan Detection" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Hardware Security</span><span class="tag">AI</span><span class="tag">Side-Channel</span></div>
+          <h3>Golden-Free AI-Assisted Hardware Trojan Detection</h3>
+          <p class="summary">Built ML pipelines using side-channel data from Ring Oscillator Networks, feature extraction, unsupervised clustering, dimensionality analysis, and anomaly detection.</p>
+          <div class="stack">Python · scikit-learn · NumPy · pandas · FPGA</div>
+          <div class="links">
+            <span style="color:var(--ink-muted)">ACM JETC, 2025</span>
+            <a href="https://doi.org/10.1145/3748652" target="_blank" rel="noopener">ACM DOI →</a>
+          </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="hardware security image processing signal processing unsupervised ml" data-search="ai-enabled image processing for hardware trojan identification ai + signal/image processing hardware security image processing signal processing unsupervised ml">
+          <div class="project-figure"><img src="assets/images/integration-main-model.png" alt="Figure from AI-Enabled Image Processing for Hardware Trojan Identification" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Hardware Security</span><span class="tag">Image Processing</span><span class="tag">Signal Processing</span></div>
+          <h3>AI-Enabled Image Processing for Hardware Trojan Identification</h3>
+          <p class="summary">Converted side-channel data into image-like representations and used image processing with unsupervised machine learning to cluster Trojan behavior.</p>
+          <div class="stack">Python · scikit-learn · DSP · Image Processing · FPGA</div>
+          <div class="links">
+            <span style="color:var(--ink-muted)">Integration, 2026</span>
+            <a href="https://doi.org/10.1016/j.vlsi.2025.102628" target="_blank" rel="noopener">ScienceDirect →</a>
+          </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="adversarial ml hardware security trustworthy ai robustness" data-search="adversarial attack resilient ml-assisted golden free hardware trojan detection hardware security / adversarial ml adversarial ml hardware security trustworthy ai robustness">
+          <div class="project-figure"><img src="assets/images/microelectronics-robustness-results.png" alt="Figure from Adversarial Attack Resilient ML-Assisted Golden Free Hardware Trojan Detection" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Adversarial ML</span><span class="tag">Hardware Security</span><span class="tag">Trustworthy AI</span></div>
+          <h3>Adversarial Attack Resilient ML-Assisted Golden Free Hardware Trojan Detection</h3>
+          <p class="summary">Evaluated golden-reference-free hardware Trojan detection under adversarial attack scenarios and robustness-focused model variants.</p>
+          <div class="stack">Python · ART · scikit-learn · Adversarial ML · Clustering</div>
+          <div class="links">
+            <span style="color:var(--ink-muted)">Microelectronics, 2026</span>
+            <a href="https://doi.org/10.3390/microelectronics2010002" target="_blank" rel="noopener">Microelectronics DOI →</a>
+          </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="hardware security synthetic data smote tvae adversarial ml" data-search="synthetic data augmentation for robust hardware trojan detection journal of electronic testing / under submission hardware security synthetic data smote tvae adversarial ml">
+          <div class="project-figure"><img src="assets/images/jet-framework-model.png" alt="Figure from Synthetic Data Augmentation for Robust Hardware Trojan Detection" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Hardware Security</span><span class="tag">Synthetic Data</span><span class="tag">SMOTE</span></div>
+          <h3>Synthetic Data Augmentation for Robust Hardware Trojan Detection</h3>
+          <p class="summary">Combined feature-space attack analysis with synthetic data augmentation and adversarially trained models for side-channel Trojan detection.</p>
+          <div class="stack">Python · SMOTE · TVAE · SVM · Adversarial Training</div>
+          <div class="links">
+            <span style="color:var(--ink-muted)">Manuscript under submission</span>
+            
+          </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="llms healthcare ai rubric scoring human-centered ai" data-search="clinical communication and llm-based heart rubric scoring healthcare ai / llms llms healthcare ai rubric scoring human-centered ai">
+          <div class="project-figure"><img src="assets/images/clinical-ai.png" alt="Figure from Clinical Communication and LLM-Based HEART Rubric Scoring" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">LLMs</span><span class="tag">Healthcare AI</span><span class="tag">Rubric Scoring</span></div>
+          <h3>Clinical Communication and LLM-Based HEART Rubric Scoring</h3>
+          <p class="summary">Developed an AI-compatible HEART rubric schema with transcript-only 0-3 scoring, evidence spans, and validation planning against human ratings.</p>
+          <div class="stack">Python · PyTorch · Transformers · Longformer · SBERT</div>
+          <div class="links">
+            <span style="color:var(--ink-muted)">Active AI prototype</span>
+            <a href="contact.html" target="_blank" rel="noopener">Contact →</a>
+          </div>
+          </div>
+        </article>
+        <article class="project-card" data-tags="drug discovery deep learning self-attention bioinformatics" data-search="csatdta: drug-target affinity prediction ai for drug discovery drug discovery deep learning self-attention bioinformatics">
+          <div class="project-figure"><img src="assets/images/csatdta.png" alt="Figure from CSatDTA: Drug-Target Affinity Prediction" loading="lazy"></div>
+          <div class="project-card-body">
+          <div class="tag-row"><span class="tag">Drug Discovery</span><span class="tag">Deep Learning</span><span class="tag">Self-Attention</span></div>
+          <h3>CSatDTA: Drug-Target Affinity Prediction</h3>
+          <p class="summary">Developed CSatDTA, a convolutional self-attention model for drug and target sequence affinity prediction.</p>
+          <div class="stack">Python · TensorFlow · Keras · CNNs · Self-Attention</div>
+          <div class="links">
+            <span style="color:var(--ink-muted)">IJMS, 2022</span>
+            <a href="https://doi.org/10.3390/ijms23158453" target="_blank" rel="noopener">MDPI DOI →</a>
+          </div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Recent publications</span>
+            <h2>Peer-reviewed work behind the projects.</h2>
+          </div>
+          <a class="btn btn-link" href="publications.html">All 33 publications →</a>
+        </div>
+        <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-year">2026</div>
+          <div>
+            <h3 class="pub-title"><a href="https://doi.org/10.1016/j.vlsi.2025.102628" target="_blank" rel="noopener">AI-enabled image processing approach for efficient clustering and identification of hardware Trojans</a></h3>
+            <div class="pub-authors"><em>Ashutosh Ghimire</em>, Mohammed Alkurdi, Saraju P. Mohanty, Fathi Amsaad</div>
+            <div class="pub-venue">Integration, Volume 107, Article 102628 · Journal</div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-year">2026</div>
+          <div>
+            <h3 class="pub-title"><a href="https://doi.org/10.3390/microelectronics2010002" target="_blank" rel="noopener">Adversarial Attack Resilient ML-Assisted Golden Free Approach for Hardware Trojan Detection</a></h3>
+            <div class="pub-authors"><em>Ashutosh Ghimire</em>, Mohammed Alkurdi, Ghazal Ghajari, Mohammad Arif Hossain, Fathi Amsaad</div>
+            <div class="pub-venue">Microelectronics 2(1), 2 · Journal</div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-year">2026</div>
+          <div>
+            <h3 class="pub-title"><a href="https://doi.org/10.1109/ACCESS.2026.3677763" target="_blank" rel="noopener">D2H-AD: A Hybrid Model Utilizing Hyperdimensional Computing for Advanced Anomaly Detection</a></h3>
+            <div class="pub-authors">Ghazal Ghajari, Elaheh Ghajari, <em>Ashutosh Ghimire</em>, Saeid Ataei, Faris Alsulami, Fathi Amsaad</div>
+            <div class="pub-venue">IEEE Access 14, 55227-55247 · Journal</div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-year">2025</div>
+          <div>
+            <h3 class="pub-title"><a href="https://doi.org/10.1145/3748652" target="_blank" rel="noopener">A Golden-Free Unsupervised ML-Assisted Security Approach for Detection of IC Hardware Trojans</a></h3>
+            <div class="pub-authors"><em>Ashutosh Ghimire</em>, Mohammed Alkurdi, Md. Tauhidur Rahman, Saraju Mohanty, Fathi Amsaad</div>
+            <div class="pub-venue">ACM Journal on Emerging Technologies in Computing Systems 21(3) · Journal</div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-year">2025</div>
+          <div>
+            <h3 class="pub-title"><a href="https://doi.org/10.1109/ACCESS.2025.3593456" target="_blank" rel="noopener">A Survey on Application of AI on Reverse Engineering for Software Analysis and Security</a></h3>
+            <div class="pub-authors"><em>Ashutosh Ghimire</em>, Sahasra Rao Lingala, Junjie Zhang, Faris Alsulami, Fathi Amsaad</div>
+            <div class="pub-venue">IEEE Access 13, 152903-152913 · Journal</div>
+          </div>
+        </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <span class="eyebrow">About</span>
+            <h2>PhD with a software engineering backbone.</h2>
+            <ul class="kv-list">
+              <li><span class="key">Role</span><span>PhD Candidate, CSE</span></li>
+              <li><span class="key">Lab</span><span>SMART Cybersecurity Research Lab</span></li>
+              <li><span class="key">Location</span><span>Dayton / Fairborn, Ohio, USA</span></li>
+              <li><span class="key">Email</span><span><a href="mailto:ashutosh.ghimire@wright.edu">ashutosh.ghimire@wright.edu</a></span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="lead">I'm a PhD candidate in Computer Science and Engineering at Wright State University, with three years of prior software engineering experience building production REST APIs, backend systems, and customer-facing applications.</p>
+            <p>That mix shows up in the work: I write reproducible Python ML pipelines, ship code that runs in batch on HPC, evaluate models under adversarial conditions, and communicate research clearly. Comfortable across the stack from FPGA side-channel measurements up to LLM-based explanation layers.</p>
+            <div class="callout">
+              <p><strong>What I'm looking for:</strong> Industry research internships (Summer 2026 / 2027), applied scientist roles, and post-PhD positions where ML rigor meets real engineering constraints — security, healthcare, scientific computing, infrastructure.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-banner">
+          <div>
+            <h2>Let's talk.</h2>
+            <p>Open to internship conversations, research engineering roles, and collaborations. Quick to reply.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="contact.html">Get in touch</a>
+            <a class="btn btn-ghost" href="mailto:ashutosh.ghimire@wright.edu">ashutosh.ghimire@wright.edu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
         <div>
           <strong>Ashutosh Ghimire</strong>
-          <p>AI/ML projects, technical skills, software experience, and publication-backed credibility.</p>
+          <p style="margin-top:0.5rem;color:var(--ink-muted);font-size:0.92rem;">AI / ML PhD candidate at Wright State University. Open to research internships and full-time roles in AI research, ML engineering, and applied science.</p>
+          <p style="font-family:var(--mono);font-size:0.82rem;color:var(--ink-muted);margin-top:0.75rem;"><a href="mailto:ashutosh.ghimire@wright.edu">ashutosh.ghimire@wright.edu</a></p>
         </div>
-        <div class="footer-links" data-footer-links></div>
+        <div>
+          <h4>Explore</h4>
+          <ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="publications.html">Publications</a></li><li><a href="research.html">Research</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div>
+          <h4>Profiles</h4>
+          <ul><li><a href="https://scholar.google.com/citations?user=mhTDRysAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li><li><a href="https://orcid.org/0000-0001-6210-1219" target="_blank" rel="noopener">ORCID</a></li><li><a href="https://www.linkedin.com/in/ashutoshghimire" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/aashutoshghimire" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://people.wright.edu/ashutosh.ghimire" target="_blank" rel="noopener">Wright State</a></li></ul>
+        </div>
       </div>
-      <div class="container footer-bottom">
-        <span>Copyright <span data-year></span> Ashutosh Ghimire.</span>
-        <span>Last curated May 2026.</span>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Ashutosh Ghimire</span>
+        <span>Last updated May 2026</span>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
 </html>

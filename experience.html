@@ -1,112 +1,281 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Experience | Ashutosh Ghimire</title>
-    <meta name="description" content="Experience, education, technical skills, software engineering background, awards, and technical profile for Ashutosh Ghimire.">
-    <meta property="og:title" content="Experience - Ashutosh Ghimire">
-    <meta property="og:description" content="AI/ML experience, software engineering background, education, skills, and leadership.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/llm-iot.png">
-    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/css/styles.css?v=4">
-    <script defer src="assets/js/data.js?v=4"></script>
-    <script defer src="assets/js/app.js?v=4"></script>
-  </head>
-  <body data-page="experience">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header" data-header>
-      <nav class="nav-shell" aria-label="Main navigation">
-        <a class="brand" href="index.html">
-          <span class="brand-mark">AG</span>
-          <span><strong>Ashutosh Ghimire</strong><small>AI/ML PhD Candidate</small></span>
-        </a>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
-        <div class="nav-menu" id="site-menu" data-nav-menu>
-          <a href="index.html">Home</a>
-          <a href="projects.html">Projects</a>
-          <a href="experience.html">Experience</a>
-          <a href="publications.html">Publications</a>
-          <a href="research.html">Research</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="page-hero experience-hero">
-        <div class="container page-hero-content">
-          <p class="eyebrow">Experience</p>
-          <h1>AI/ML, software engineering, and research implementation experience.</h1>
-          <p>A concise view of the roles, skills, and project habits behind Ashutosh's work: model development, data pipelines, reproducible experiments, backend software, and technical communication.</p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Highlights</p>
-              <h2>Technical strengths across research and engineering.</h2>
-              <p class="section-note">These highlights connect academic work with practical implementation habits from software engineering, ML experimentation, and systems work.</p>
-            </div>
-          </div>
-          <div class="experience-highlight-grid" data-experience-highlights></div>
-        </div>
-      </section>
-
-      <section class="section section-muted">
-        <div class="container two-column">
-          <div>
-            <p class="eyebrow">Timeline</p>
-            <h2>Roles and responsibilities.</h2>
-          </div>
-          <div class="timeline" data-experience-timeline></div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container two-column">
-          <div>
-            <p class="eyebrow">Education</p>
-            <h2>Academic background.</h2>
-          </div>
-          <div class="education-grid" data-education></div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Skills</p>
-              <h2>Technical stack by workflow.</h2>
-            </div>
-          </div>
-          <div class="skills-grid" data-skills></div>
-        </div>
-      </section>
-
-      <section class="section section-muted">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Awards and Leadership</p>
-              <h2>Service, mentoring, and recognition.</h2>
-            </div>
-          </div>
-          <div class="award-grid" data-awards></div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div><strong>Ashutosh Ghimire</strong><p>AI/ML experience, software engineering foundation, technical skills, and research credibility.</p></div>
-        <div class="footer-links" data-footer-links></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience · Ashutosh Ghimire</title>
+  <meta name="description" content="Experience timeline, education, skills, and awards for Ashutosh Ghimire — AI/ML PhD candidate with prior software engineering background in REST APIs and production systems.">
+  <meta name="author" content="Ashutosh Ghimire">
+  <meta name="keywords" content="Ashutosh Ghimire, AI ML PhD, machine learning engineer, applied scientist intern, trustworthy AI, hardware security, adversarial machine learning, LLM systems, Wright State University, Python, PyTorch">
+  <meta property="og:title" content="Experience · Ashutosh Ghimire">
+  <meta property="og:description" content="Experience timeline, education, skills, and awards for Ashutosh Ghimire — AI/ML PhD candidate with prior software engineering background in REST APIs and production systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-research.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Experience · Ashutosh Ghimire">
+  <meta name="twitter:description" content="Experience timeline, education, skills, and awards for Ashutosh Ghimire — AI/ML PhD candidate with prior software engineering background in REST APIs and production systems.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Ashutosh Ghimire — home">
+        <span class="brand-mark" aria-hidden="true">AG</span>
+        <span class="brand-meta">
+          <strong>Ashutosh Ghimire</strong>
+          <small>AI / ML PhD Candidate</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span aria-hidden="true">≡</span> Menu
+      </button>
+      <ul class="nav-list" id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="experience.html" class="is-active" aria-current="page">Experience</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <span class="eyebrow">Experience</span>
+        <h1>Research, engineering, and ML implementation.</h1>
+        <p class="lead">Six years across applied AI research and software engineering — from production REST APIs serving 1,000+ concurrent users to ML pipelines for hardware security and drug discovery.</p>
       </div>
-      <div class="container footer-bottom"><span>Copyright <span data-year></span> Ashutosh Ghimire.</span><span>Last curated May 2026.</span></div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Roles</span>
+        <h2 style="margin-bottom:2rem;">Roles &amp; responsibilities.</h2>
+        <ol class="timeline" style="list-style:none;padding:0;">
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">Wright State University</span>
+            <div>Dayton, Ohio</div>
+            <div style="margin-top:4px;">May 2025 - Present</div>
+          </div>
+          <div class="timeline-content">
+            <h3>Graduate Research Assistant</h3>
+            <ul><li>Designed and evaluated adversarially robust ML pipelines for side-channel hardware security datasets.</li><li>Built feature extraction, clustering, and adversarial evaluation workflows for hardware Trojan detection.</li><li>Refactored preprocessing and inference stages for deterministic, reproducible batch experimentation.</li></ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">Wright State University</span>
+            <div>Dayton, Ohio</div>
+            <div style="margin-top:4px;">August 2024 - April 2025</div>
+          </div>
+          <div class="timeline-content">
+            <h3>Research Associate</h3>
+            <ul><li>Developed adaptive ensemble learning models for real-time financial fraud detection under concept drift.</li><li>Integrated explainability methods to improve trust and usability in security-critical ML systems.</li><li>Contributed to research proposals, whitepapers, mentoring, and lab-level coordination.</li></ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">Wright State University</span>
+            <div>Dayton, Ohio</div>
+            <div style="margin-top:4px;">September 2022 - April 2024</div>
+          </div>
+          <div class="timeline-content">
+            <h3>Graduate Research Assistant</h3>
+            <ul><li>Implemented distributed federated learning systems for secure and privacy-aware AI hardware.</li><li>Developed ML-assisted hardware Trojan localization and detection algorithms.</li><li>Designed parallel ML approaches for multicore environments and contributed to hardware security publications.</li></ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">Jeonbuk National University</span>
+            <div>Jeonju, South Korea</div>
+            <div style="margin-top:4px;">September 2021 - August 2022</div>
+          </div>
+          <div class="timeline-content">
+            <h3>Research Student</h3>
+            <ul><li>Developed CSatDTA for drug-target affinity prediction using convolutional self-attention.</li><li>Worked with large-scale drug-target interaction data and preprocessing workflows.</li><li>Combined AI, chemistry, pharmacology, and biology concepts for computational drug discovery.</li></ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">YBC Services</span>
+            <div>Remote / Aldershot, UK</div>
+            <div style="margin-top:4px;">May 2021 - August 2021</div>
+          </div>
+          <div class="timeline-content">
+            <h3>Software Engineer</h3>
+            <ul><li>Developed RESTful APIs serving React and Flutter frontends for HR management software.</li><li>Supported software handling 1,000+ concurrent users.</li><li>Led team planning, blocker tracking, and API development workflows.</li></ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">Bent Ray Technologies</span>
+            <div>Lalitpur, Nepal</div>
+            <div style="margin-top:4px;">December 2018 - June 2021</div>
+          </div>
+          <div class="timeline-content">
+            <h3>Software Engineer</h3>
+            <ul><li>Built and deployed production web applications across e-commerce and enterprise platforms.</li><li>Designed REST APIs for staffing and business systems with secure data exchange.</li></ul>
+          </div>
+        </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Education</span>
+        <h2 style="margin-bottom:2rem;">Academic background.</h2>
+        <ol class="timeline" style="list-style:none;padding:0;">
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">Wright State University</span>
+            <div style="margin-top:4px;">Present</div>
+          </div>
+          <div class="timeline-content">
+            <h3>PhD in Computer Science and Engineering</h3>
+            <p style="color:var(--ink-soft);margin:0;">Technical focus: trustworthy AI, hardware security, side-channel analysis, adversarial ML, LLM systems, and AI for security.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">Wright State University</span>
+            <div style="margin-top:4px;">April 2024</div>
+          </div>
+          <div class="timeline-content">
+            <h3>Master of Science in Computer Science</h3>
+            <p style="color:var(--ink-soft);margin:0;">Thesis: An ML-Assisted Golden-Free Hardware Trojan Localization and Detection Approach for Trusted Microelectronics.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">Tribhuvan University</span>
+            <div style="margin-top:4px;">February 2019</div>
+          </div>
+          <div class="timeline-content">
+            <h3>Bachelor of Engineering in Computer Engineering</h3>
+            <p style="color:var(--ink-soft);margin:0;">Engineering foundation in software, systems, and computer engineering.</p>
+          </div>
+        </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Technical stack</span>
+        <h2 style="margin-bottom:2rem;">Skills by workflow.</h2>
+        <div class="skills-grid">
+        <div class="skill-block">
+          <h4>AI / Machine Learning</h4>
+          <ul><li>Python</li><li>scikit-learn</li><li>pandas</li><li>NumPy</li><li>TensorFlow</li><li>Keras</li><li>PyTorch</li><li>Transformers</li><li>CNNs</li><li>Self-attention</li><li>Clustering</li><li>Anomaly detection</li></ul>
+        </div>
+        <div class="skill-block">
+          <h4>Trustworthy AI and ML Security</h4>
+          <ul><li>Adversarial ML</li><li>ART</li><li>Robustness testing</li><li>Explainable AI</li><li>SHAP</li><li>LIME</li><li>Pseudo-labeling</li><li>Synthetic augmentation</li></ul>
+        </div>
+        <div class="skill-block">
+          <h4>Hardware Security</h4>
+          <ul><li>Hardware Trojan detection</li><li>FPGA</li><li>Basys 3</li><li>Ring Oscillator Networks</li><li>Power/EM side-channels</li><li>Feature extraction</li><li>Golden-reference-free detection</li></ul>
+        </div>
+        <div class="skill-block">
+          <h4>LLMs and NLP</h4>
+          <ul><li>LLM-assisted explainability</li><li>Rubric-aware scoring</li><li>Synthetic transcripts</li><li>Longformer</li><li>DistilBERT</li><li>SBERT</li><li>NLP classification</li></ul>
+        </div>
+        <div class="skill-block">
+          <h4>Systems / HPC</h4>
+          <ul><li>Linux</li><li>SLURM</li><li>Docker</li><li>Singularity</li><li>Jupyter</li><li>SSH/SCP</li><li>Bash</li><li>Distributed workflows</li><li>Experiment management</li></ul>
+        </div>
+        <div class="skill-block">
+          <h4>Web, APIs, and Security</h4>
+          <ul><li>REST APIs</li><li>Microservices</li><li>Swagger</li><li>Postman</li><li>Git</li><li>Go</li><li>C/C++</li><li>Wireshark</li><li>tcpdump</li><li>Zeek</li><li>Ghidra</li><li>Binary Ninja</li></ul>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Awards &amp; service</span>
+        <h2 style="margin-bottom:2rem;">Recognition and leadership.</h2>
+        <ol class="timeline" style="list-style:none;padding:0;">
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">Wright State University</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Graduate Student Excellence Award</h3>
+            <p style="color:var(--ink-soft);margin:0;">Recognition in 2025 for graduate student excellence.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">Wright State University</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Nepalese Student Association Treasurer</h3>
+            <p style="color:var(--ink-soft);margin:0;">Managed operations and logistics for a 200+ participant student organization.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="where">SMART Cybersecurity Research Lab</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Research Mentorship and Lab Coordination</h3>
+            <p style="color:var(--ink-soft);margin:0;">Coordinated research tasks, trained new students, supported documentation, and helped organize lab activities.</p>
+          </div>
+        </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Want the full CV?</h2>
+            <p>One-page PDF — all the details with a clean print layout.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="assets/docs/Ashutosh_Ghimire_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn-ghost" href="contact.html">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Ashutosh Ghimire</strong>
+          <p style="margin-top:0.5rem;color:var(--ink-muted);font-size:0.92rem;">AI / ML PhD candidate at Wright State University. Open to research internships and full-time roles in AI research, ML engineering, and applied science.</p>
+          <p style="font-family:var(--mono);font-size:0.82rem;color:var(--ink-muted);margin-top:0.75rem;"><a href="mailto:ashutosh.ghimire@wright.edu">ashutosh.ghimire@wright.edu</a></p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="publications.html">Publications</a></li><li><a href="research.html">Research</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div>
+          <h4>Profiles</h4>
+          <ul><li><a href="https://scholar.google.com/citations?user=mhTDRysAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li><li><a href="https://orcid.org/0000-0001-6210-1219" target="_blank" rel="noopener">ORCID</a></li><li><a href="https://www.linkedin.com/in/ashutoshghimire" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/aashutoshghimire" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://people.wright.edu/ashutosh.ghimire" target="_blank" rel="noopener">Wright State</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Ashutosh Ghimire</span>
+        <span>Last updated May 2026</span>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
 </html>
