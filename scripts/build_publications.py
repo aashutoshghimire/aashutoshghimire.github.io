@@ -141,8 +141,8 @@ def render_publications_page(db: dict) -> str:
     <meta name="twitter:title" content="Publications | Ashutosh Ghimire">
     <meta name="twitter:description" content="{total_papers} peer-reviewed publications by Ashutosh Ghimire in trustworthy AI, hardware security, side-channel analysis, reverse engineering, HDC, LLM-assisted IoT security, and drug discovery.">
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/css/styles.css?v=5">
-    <script defer src="assets/js/app.js?v=5"></script>
+    <link rel="stylesheet" href="assets/css/styles.css?v=7">
+    <script defer src="assets/js/app.js?v=7"></script>
   </head>
   <body data-page="publications">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -162,6 +162,7 @@ def render_publications_page(db: dict) -> str:
           <a href="experience.html">Experience</a>
           <a href="publications.html" class="is-active" aria-current="page">Publications</a>
           <a href="research.html">Research</a>
+          <a href="teaching.html">Teaching</a>
           <a href="contact.html">Contact</a>
         </div>
       </nav>
@@ -209,7 +210,7 @@ def render_publications_page(db: dict) -> str:
           </div>
           <div>
             <h4>Explore</h4>
-            <ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="publications.html">Publications</a></li><li><a href="research.html">Research</a></li><li><a href="contact.html">Contact</a></li></ul>
+            <ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="publications.html">Publications</a></li><li><a href="research.html">Research</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="contact.html">Contact</a></li></ul>
           </div>
           <div>
             <h4>Profiles</h4>

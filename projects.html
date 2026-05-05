@@ -15,8 +15,8 @@
     <meta name="twitter:title" content="Projects | Ashutosh Ghimire">
     <meta name="twitter:description" content="Industry-facing AI/ML project portfolio for Ashutosh Ghimire, including model pipelines, security ML, LLM-assisted systems, hyperdimensional computing, software security, and scientific ML.">
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/css/styles.css?v=5">
-    <script defer src="assets/js/app.js?v=5"></script>
+    <link rel="stylesheet" href="assets/css/styles.css?v=7">
+    <script defer src="assets/js/app.js?v=7"></script>
   </head>
   <body data-page="projects">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -36,6 +36,7 @@
           <a href="experience.html">Experience</a>
           <a href="publications.html">Publications</a>
           <a href="research.html">Research</a>
+          <a href="teaching.html">Teaching</a>
           <a href="contact.html">Contact</a>
         </div>
       </nav>
@@ -46,14 +47,14 @@
         <div class="container">
           <span class="eyebrow">Projects</span>
           <h1>Applied AI / ML projects.</h1>
-          <p class="lead">Eleven projects spanning hardware security, adversarial ML, LLM-assisted explainability, hyperdimensional computing, drug discovery, and ML systems. Each entry shows the problem, approach, result, and stack.</p>
+          <p class="lead">Projects spanning hardware security, adversarial ML, LLM-assisted explainability, hyperdimensional computing, drug discovery, and ML systems. Each entry shows the problem, approach, result, and stack.</p>
         </div>
       </section>
 
-      <section class="section claude-project-search">
+      <section class="section claude-project-search project-filter-section">
         <div class="container">
           <div class="search-bar">
-            <input type="search" id="proj-search" placeholder="Search projects, methods, tools, papers..." data-filter-target=".project-card" data-count-target="[data-project-count]" aria-label="Search projects">
+            <input type="search" id="proj-search" placeholder="Search projects, methods, tools, papers..." data-filter-target=".project-deep-dive, .project-card" data-count-target="[data-project-count]" aria-label="Search projects">
           </div>
           <div class="filter-chips">
             <button class="chip" type="button" data-filter-chip-for="proj-search" data-filter-tag="hardware security">Hardware Security</button>
@@ -66,22 +67,94 @@
             <button class="chip" type="button" data-filter-chip-for="proj-search" data-filter-tag="federated learning">Federated Learning</button>
           </div>
           <p class="result-count" data-project-count data-noun="project" aria-live="polite"></p>
-          <div class="project-grid">
-            <article class="project-card" data-tags="hardware security|ai|side-channel|fpga" data-search="golden-free ai-assisted hardware trojan detection ai for hardware security acm jetc, 2025 traditional detection often relies on golden reference chips or destructive reverse engineering, which can be unavailable or impractical for industrial-scale validation. built ml pipelines using side-channel data from ring oscillator networks, feature extraction, unsupervised clustering, dimensionality analysis, and anomaly detection. published acm jetc work contributes a golden-free unsupervised ml-assisted approach for ic hardware trojan detection. hardware security ai side-channel fpga python scikit-learn numpy pandas fpga ring oscillator networks">
-              <img src="assets/images/thesis-localization.png" alt="Golden-Free AI-Assisted Hardware Trojan Detection visual">
-              <div class="project-card-body">
+        </div>
+      </section>
+
+      <section class="section project-deep-dive-section">
+        <div class="container">
+          <div class="section-heading section-heading-stack">
+            <div>
+              <p class="eyebrow">Featured Deep Dives</p>
+              <h2>Selected research project deep dives.</h2>
+            </div>
+            <p class="section-note">Expanded context for selected work in hardware Trojan detection, adversarial attacks on ML-based security models, and scientific machine learning.</p>
+          </div>
+
+          <div class="project-deep-dive-grid">
+            <article class="project-deep-dive project-deep-dive-featured" data-tags="hardware security|ai|side-channel|fpga" data-search="golden-free ai-assisted hardware trojan detection hardware security golden-free detection side-channel analysis ring oscillator network unsupervised clustering localization 93 percent accuracy 95 percent submitted extension">
+              <figure class="deep-dive-figure">
+                <a href="assets/images/thesis-localization.png" target="_blank" rel="noreferrer" aria-label="Open full figure for golden-free hardware Trojan detection">
+                  <img src="assets/images/thesis-localization.png" alt="Golden-free hardware Trojan detection and localization workflow visual">
+                </a>
+                <figcaption><a class="mini-link" href="assets/images/thesis-localization.png" target="_blank" rel="noreferrer">Open full figure</a></figcaption>
+              </figure>
+              <div class="project-deep-dive-copy">
                 <div class="project-meta">
-                  <span>AI for Hardware Security</span>
-                  <span>ACM JETC, 2025</span>
+                  <span>Hardware Security</span>
+                  <span>Golden-Free Detection</span>
                 </div>
                 <h3>Golden-Free AI-Assisted Hardware Trojan Detection</h3>
-                <p><strong>Challenge:</strong> Traditional detection often relies on golden reference chips or destructive reverse engineering, which can be unavailable or impractical for industrial-scale validation.</p>
-                <p><strong>Build:</strong> Built ML pipelines using side-channel data from Ring Oscillator Networks, feature extraction, unsupervised clustering, dimensionality analysis, and anomaly detection.</p>
-                <p><strong>Impact:</strong> Published ACM JETC work contributes a golden-free unsupervised ML-assisted approach for IC hardware Trojan detection.</p>
-                <div class="tag-row"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">NumPy</span><span class="tag">pandas</span><span class="tag">FPGA</span><span class="tag">Ring Oscillator Networks</span></div>
-                <div class="project-links"><a class="mini-link" href="https://doi.org/10.1145/3748652" target="_blank" rel="noreferrer">ACM DOI</a></div>
+                <p>Hardware Trojans are malicious IC modifications that can leak sensitive information, disrupt critical systems, or damage trust in the semiconductor supply chain. Many side-channel detection methods depend on golden reference chips, which are expensive, unavailable, or impractical in outsourced fabrication settings.</p>
+                <p>My work uses Ring Oscillator Network side-channel measurements with unsupervised clustering to detect Trojan-affected chips without golden data. The published work demonstrated strong detection behavior for small, short-triggered Trojans, reaching 93% accuracy while keeping the method practical for supply-chain validation.</p>
+                <p>A related submitted extension combines golden-free clustering with on-chip localization. Instead of only saying that a chip is suspicious, the framework estimates the likely Trojan-affected region so reverse engineering can focus on a smaller part of the die. FPGA validation on MD5 processor prototypes reached 95% accuracy across multiple Trojan sizes and designs.</p>
+                <div class="deep-dive-metric-row">
+                  <span>93% published accuracy</span>
+                  <span>95% submitted extension</span>
+                  <span>Golden-free SCA</span>
+                </div>
+                <div class="project-links"><a class="mini-link" href="https://doi.org/10.1145/3748652" target="_blank" rel="noreferrer">Read ACM JETC paper</a></div>
               </div>
             </article>
+
+            <article class="project-deep-dive" data-tags="drug discovery|deep learning|self-attention|bioinformatics" data-search="csatdta drug-target affinity prediction drug discovery convolution self-attention molecular drug target sequences dta ijms">
+              <figure class="deep-dive-figure">
+                <a href="assets/images/csatdta.png" target="_blank" rel="noreferrer" aria-label="Open full figure for CSatDTA drug-target affinity prediction">
+                  <img src="assets/images/csatdta.png" alt="CSatDTA drug-target affinity prediction model visual">
+                </a>
+                <figcaption><a class="mini-link" href="assets/images/csatdta.png" target="_blank" rel="noreferrer">Open full figure</a></figcaption>
+              </figure>
+              <div class="project-meta">
+                <span>Drug Discovery</span>
+                <span>IJMS, 2022</span>
+              </div>
+              <h3>CSatDTA: Drug-Target Affinity Prediction</h3>
+              <p>Drug discovery brings together chemistry, pharmacology, and biology to identify potential treatments. In early-stage drug development, predicting drug-target affinity is important because it helps estimate how strongly a drug candidate may interact with a biological target.</p>
+              <p>CSatDTA combines convolution with self-attention for molecular drug and target sequences. Convolution captures local sequence patterns, while self-attention helps model long-range interactions that standard convolution-only approaches can miss.</p>
+              <p>Comparative experiments showed that CSatDTA outperformed previous sequence-based and related approaches, demonstrating strong retention ability for drug-target affinity prediction.</p>
+              <div class="project-links"><a class="mini-link" href="https://doi.org/10.3390/ijms23158453" target="_blank" rel="noreferrer">Read IJMS paper</a></div>
+            </article>
+
+            <article class="project-deep-dive" data-tags="adversarial ml|hardware security|clustering|side-channel" data-search="adversarial attack against golden reference-free hardware trojan detection approach k-means clustering frequency side-channel analysis adversarial samples 99 percent success rate ieee">
+              <figure class="deep-dive-figure">
+                <a href="assets/images/adversarial-clustering-attack.png" target="_blank" rel="noreferrer" aria-label="Open full figure for adversarial attack against golden reference-free hardware Trojan detection">
+                  <img src="assets/images/adversarial-clustering-attack.png" alt="Adversarial attack flow against clustering-based golden reference-free hardware Trojan detection">
+                </a>
+                <figcaption><a class="mini-link" href="assets/images/adversarial-clustering-attack.png" target="_blank" rel="noreferrer">Open full figure</a></figcaption>
+              </figure>
+              <div class="project-meta">
+                <span>Adversarial ML</span>
+                <span>IEEE, 2024</span>
+              </div>
+              <h3>Adversarial Attack Against Golden Reference-Free Hardware Trojan Detection Approach</h3>
+              <p>Golden reference-free hardware Trojan detection methods use unsupervised learning to identify suspicious ICs from untrusted manufacturing flows without relying on clean reference chips. This project asks what happens when the clustering model itself becomes the target of an adversarial attack.</p>
+              <p>The work introduces feature-space adversarial attacks against K-means clustering models trained on frequency side-channel analysis data. By generating adversarial samples, an attacker can alter Trojan behavior so that the clustering model assigns the source sample to a targeted cluster.</p>
+              <p>The study showed that the clustering model is highly vulnerable, with a 99% success rate in misleading the detector. The result is important because it exposes a weakness in otherwise practical golden reference-free detection pipelines and motivates robustness-aware hardware-security ML.</p>
+              <div class="deep-dive-metric-row"><span>99% attack success rate</span><span>K-means clustering</span><span>Frequency SCA</span></div>
+              <div class="project-links"><a class="mini-link" href="https://ieeexplore.ieee.org/abstract/document/10792798" target="_blank" rel="noreferrer">Read IEEE paper</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section claude-project-search project-library-section">
+        <div class="container">
+          <div class="section-heading section-heading-stack project-library-heading">
+            <div>
+              <p class="eyebrow">More Projects</p>
+              <h2>Additional research and applied ML work.</h2>
+            </div>
+          </div>
+          <div class="project-grid">
             <article class="project-card" data-tags="hardware security|image processing|signal processing|unsupervised ml" data-search="ai-enabled image processing for hardware trojan identification ai + signal/image processing integration, 2026 stealthy ic modifications threaten semiconductor supply-chain trust, while functional testing and reverse engineering are costly to scale. converted side-channel data into image-like representations and used image processing with unsupervised machine learning to cluster trojan behavior. the publisher page reports 95% hardware trojan detection accuracy using real hardware side-channel data. hardware security image processing signal processing unsupervised ml python scikit-learn dsp image processing fpga">
               <img src="assets/images/integration-main-model.png" alt="AI-Enabled Image Processing for Hardware Trojan Identification visual">
               <div class="project-card-body">
@@ -97,7 +170,7 @@
                 <div class="project-links"><a class="mini-link" href="https://doi.org/10.1016/j.vlsi.2025.102628" target="_blank" rel="noreferrer">ScienceDirect</a></div>
               </div>
             </article>
-            <article class="project-card" data-tags="adversarial ml|hardware security|trustworthy ai|robustness" data-search="adversarial attack resilient ml-assisted golden free hardware trojan detection hardware security / adversarial ml microelectronics, 2026 security models that perform well under clean conditions can fail under perturbations, process noise, or adaptive attacks. evaluated golden-reference-free hardware trojan detection under adversarial attack scenarios and robustness-focused model variants. published microelectronics work connects adversarial robustness with practical side-channel hardware trojan detection. adversarial ml hardware security trustworthy ai robustness python art scikit-learn adversarial ml clustering pandas">
+            <article class="project-card" data-tags="adversarial ml|hardware security|trustworthy ai|robustness" data-search="adversarial attack resilient ml-assisted golden free hardware trojan detection hardware security / adversarial ml microelectronics, 2026 security models that perform well under clean conditions can fail under perturbations, process noise, or adaptive attacks. evaluated golden-reference-free hardware trojan detection under adversarial attack scenarios with statistical feature extraction, clustering, filtering, and pseudo-labeling. achieved high detection accuracy with zero false negatives while remaining resilient against adversarial perturbations. adversarial ml hardware security trustworthy ai robustness python art scikit-learn adversarial ml clustering pandas pseudo-labeling">
               <img src="assets/images/microelectronics-robustness-results.png" alt="Adversarial Attack Resilient ML-Assisted Golden Free Hardware Trojan Detection visual">
               <div class="project-card-body">
                 <div class="project-meta">
@@ -106,8 +179,8 @@
                 </div>
                 <h3>Adversarial Attack Resilient ML-Assisted Golden Free Hardware Trojan Detection</h3>
                 <p><strong>Challenge:</strong> Security models that perform well under clean conditions can fail under perturbations, process noise, or adaptive attacks.</p>
-                <p><strong>Build:</strong> Evaluated golden-reference-free hardware Trojan detection under adversarial attack scenarios and robustness-focused model variants.</p>
-                <p><strong>Impact:</strong> Published Microelectronics work connects adversarial robustness with practical side-channel hardware Trojan detection.</p>
+                <p><strong>Build:</strong> Used statistical feature extraction, clustering, internal filtering, and pseudo-labeling to train a detector from reliable chip patterns.</p>
+                <p><strong>Impact:</strong> Experimental evaluation showed high detection accuracy with zero false negatives and resilience against adversarial perturbations.</p>
                 <div class="tag-row"><span class="tag">Python</span><span class="tag">ART</span><span class="tag">scikit-learn</span><span class="tag">Adversarial ML</span><span class="tag">Clustering</span><span class="tag">pandas</span></div>
                 <div class="project-links"><a class="mini-link" href="https://doi.org/10.3390/microelectronics2010002" target="_blank" rel="noreferrer">Microelectronics DOI</a></div>
               </div>
@@ -122,7 +195,7 @@
                 <h3>Synthetic Data Augmentation for Robust Hardware Trojan Detection</h3>
                 <p><strong>Challenge:</strong> Hardware Trojan datasets are often small, imbalanced, and vulnerable to adversarial perturbations, making robust evaluation difficult.</p>
                 <p><strong>Build:</strong> Combined feature-space attack analysis with synthetic data augmentation and adversarially trained models for side-channel Trojan detection.</p>
-                <p><strong>Impact:</strong> Prepared as under-submission work for Journal of Electronic Testing, extending the hardware-security research story beyond clean-data detection.</p>
+                <p><strong>Impact:</strong> Developed into a Journal of Electronic Testing submission that extends the hardware-security research story beyond clean-data detection.</p>
                 <div class="tag-row"><span class="tag">Python</span><span class="tag">SMOTE</span><span class="tag">TVAE</span><span class="tag">SVM</span><span class="tag">Adversarial Training</span><span class="tag">Side-Channel Data</span></div>
                 <div class="project-links"></div>
               </div>
@@ -140,21 +213,6 @@
                 <p><strong>Impact:</strong> Positioned as an interdisciplinary research MVP and collaboration-ready prototype, not a deployed clinical product.</p>
                 <div class="tag-row"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Transformers</span><span class="tag">Longformer</span><span class="tag">SBERT</span><span class="tag">JSON Schemas</span></div>
                 <div class="project-links"><a class="mini-link" href="contact.html">Contact</a></div>
-              </div>
-            </article>
-            <article class="project-card" data-tags="drug discovery|deep learning|self-attention|bioinformatics" data-search="csatdta: drug-target affinity prediction ai for drug discovery ijms, 2022 early-stage drug discovery needs sequence-based methods that capture local and long-range interactions in molecular and protein sequences. developed csatdta, a convolutional self-attention model for drug and target sequence affinity prediction. the ijms paper reports that csatdta outperforms previous sequence-based approaches on benchmark datasets. drug discovery deep learning self-attention bioinformatics python tensorflow keras cnns self-attention tfrecord">
-              <img src="assets/images/csatdta.png" alt="CSatDTA: Drug-Target Affinity Prediction visual">
-              <div class="project-card-body">
-                <div class="project-meta">
-                  <span>AI for Drug Discovery</span>
-                  <span>IJMS, 2022</span>
-                </div>
-                <h3>CSatDTA: Drug-Target Affinity Prediction</h3>
-                <p><strong>Challenge:</strong> Early-stage drug discovery needs sequence-based methods that capture local and long-range interactions in molecular and protein sequences.</p>
-                <p><strong>Build:</strong> Developed CSatDTA, a convolutional self-attention model for drug and target sequence affinity prediction.</p>
-                <p><strong>Impact:</strong> The IJMS paper reports that CSatDTA outperforms previous sequence-based approaches on benchmark datasets.</p>
-                <div class="tag-row"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">CNNs</span><span class="tag">Self-Attention</span><span class="tag">TFRecord</span></div>
-                <div class="project-links"><a class="mini-link" href="https://doi.org/10.3390/ijms23158453" target="_blank" rel="noreferrer">MDPI DOI</a></div>
               </div>
             </article>
             <article class="project-card" data-tags="hdc|anomaly detection|iot security|edge ai" data-search="hyperdimensional computing for iot anomaly detection hdc / cybersecurity ieee access / satc iot intrusion detection needs efficient processing of high-dimensional network data while detecting known and unknown attack patterns. applied hyperdimensional representations to network anomaly detection, including nsl-kdd and hybrid hdc-based frameworks. related public records describe hdc-based iot anomaly detection and d2h-ad as a hybrid model for advanced anomaly detection. hdc anomaly detection iot security edge ai python hdc ml evaluation nsl-kdd anomaly detection">
@@ -247,7 +305,7 @@
           </div>
           <div>
             <h4>Explore</h4>
-            <ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="publications.html">Publications</a></li><li><a href="research.html">Research</a></li><li><a href="contact.html">Contact</a></li></ul>
+            <ul><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="publications.html">Publications</a></li><li><a href="research.html">Research</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="contact.html">Contact</a></li></ul>
           </div>
           <div>
             <h4>Profiles</h4>
