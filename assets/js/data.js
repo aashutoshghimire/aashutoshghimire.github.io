@@ -4,7 +4,6 @@ window.siteData = {
     title: "PhD Candidate | AI/ML, Trustworthy AI, Hardware Security, and Applied ML Systems",
     location: "Dayton / Fairborn, Ohio, USA",
     email: "ashutosh.ghimire@wright.edu",
-    secondaryEmail: "aashutoshghimire7@gmail.com",
     affiliation: "Wright State University",
     lab: "SMART Cybersecurity Research Lab",
     scholarCitations: "231",
