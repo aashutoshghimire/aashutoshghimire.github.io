@@ -1,11 +1,11 @@
 {
   "scholar_user_id": "mhTDRysAAAAJ",
   "scholar_profile_url": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-  "total_citations": 231,
-  "h_index": null,
-  "i10_index": null,
-  "last_refreshed": "2026-05-31",
-  "last_refresh_status": "scholar fetch failed; previous data retained",
+  "total_citations": 256,
+  "h_index": 10,
+  "i10_index": 11,
+  "last_refreshed": "2026-06-07",
+  "last_refresh_status": "ok — 33 updated, 0 new, 7 abstracts enriched",
   "publications": [
     {
       "title": "AI-enabled image processing approach for efficient clustering and identification of hardware Trojans",
@@ -22,10 +22,10 @@
       ],
       "link": "https://doi.org/10.1016/j.vlsi.2025.102628",
       "doi": "10.1016/j.vlsi.2025.102628",
-      "citations": null,
+      "citations": 1,
       "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
+      "scholar_id": "mhTDRysAAAAJ:M3ejUd6NZC8C",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:M3ejUd6NZC8C"
     },
     {
       "title": "Adversarial Attack Resilient ML-Assisted Golden Free Approach for Hardware Trojan Detection",
@@ -41,10 +41,10 @@
       ],
       "link": "https://doi.org/10.3390/microelectronics2010002",
       "doi": "10.3390/microelectronics2010002",
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
+      "citations": 1,
+      "abstract": "The growing dependence on third-party foundries for integrated circuit (IC) fabrication has created major security concerns because of hardware Trojan (HT) insertion risks.",
+      "scholar_id": "mhTDRysAAAAJ:aqlVkmm33-oC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:aqlVkmm33-oC"
     },
     {
       "title": "D2H-AD: A Hybrid Model Utilizing Hyperdimensional Computing for Advanced Anomaly Detection",
@@ -60,68 +60,10 @@
       ],
       "link": "https://doi.org/10.1109/ACCESS.2026.3677763",
       "doi": "10.1109/ACCESS.2026.3677763",
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "A Golden-Free Unsupervised ML-Assisted Security Approach for Detection of IC Hardware Trojans",
-      "authors": "Ashutosh Ghimire, Mohammed Alkurdi, Md. Tauhidur Rahman, Saraju Mohanty, Fathi Amsaad",
-      "venue": "ACM Journal on Emerging Technologies in Computing Systems 21(3)",
-      "year": "2025",
-      "type": "Journal",
-      "featured": true,
-      "tags": [
-        "Hardware Security",
-        "Trustworthy AI",
-        "Unsupervised ML",
-        "Side-Channel"
-      ],
-      "link": "https://doi.org/10.1145/3748652",
-      "doi": "10.1145/3748652",
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "A Survey on Application of AI on Reverse Engineering for Software Analysis and Security",
-      "authors": "Ashutosh Ghimire, Sahasra Rao Lingala, Junjie Zhang, Faris Alsulami, Fathi Amsaad",
-      "venue": "IEEE Access 13, 152903-152913",
-      "year": "2025",
-      "type": "Journal",
-      "featured": true,
-      "tags": [
-        "Software Security",
-        "Reverse Engineering",
-        "Survey"
-      ],
-      "link": "https://doi.org/10.1109/ACCESS.2025.3593456",
-      "doi": "10.1109/ACCESS.2025.3593456",
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Network Anomaly Detection for IoT Using Hyperdimensional Computing on NSL-KDD",
-      "authors": "Ghazal Ghajari, Ashutosh Ghimire, Elaheh Ghajari, Fathi H. Amsaad",
-      "venue": "2025 1st International Conference on Secure IoT, Assured and Trusted Computing",
-      "year": "2025",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "HDC",
-        "IoT Security",
-        "Anomaly Detection"
-      ],
-      "link": "https://doi.org/10.1109/SATC65530.2025.11136944",
-      "doi": "10.1109/SATC65530.2025.11136944",
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
+      "citations": 0,
+      "abstract": "Anomaly detection is a cornerstone of modern intelligent systems, with critical applications in healthcare, cybersecurity, smart grids, and IoT environments.",
+      "scholar_id": "mhTDRysAAAAJ:4DMP91E08xMC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:4DMP91E08xMC"
     },
     {
       "title": "Enhancing Cybersecurity in Critical Infrastructure with LLM-Assisted Explainable IoT Systems",
@@ -138,10 +80,125 @@
       ],
       "link": "https://doi.org/10.1109/SATC65530.2025.11137104",
       "doi": "10.1109/SATC65530.2025.11137104",
-      "citations": null,
+      "citations": 17,
+      "abstract": "Ensuring the security of critical infrastructure has become increasingly vital with the proliferation of Internet of Things (IoT) systems. However, the heterogeneous nature of IoT data and the lack of human-comprehensible insights from anomaly detection models remain significant challenges.",
+      "scholar_id": "mhTDRysAAAAJ:4TOpqqG69KYC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:4TOpqqG69KYC"
+    },
+    {
+      "title": "Network Anomaly Detection for IoT Using Hyperdimensional Computing on NSL-KDD",
+      "authors": "Ghazal Ghajari, Ashutosh Ghimire, Elaheh Ghajari, Fathi H. Amsaad",
+      "venue": "2025 1st International Conference on Secure IoT, Assured and Trusted Computing",
+      "year": "2025",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "HDC",
+        "IoT Security",
+        "Anomaly Detection"
+      ],
+      "link": "https://doi.org/10.1109/SATC65530.2025.11136944",
+      "doi": "10.1109/SATC65530.2025.11136944",
+      "citations": 13,
+      "abstract": "With the rapid growth of IoT devices, ensuring robust network security has become a critical challenge. Traditional intrusion detection systems (IDSs) often face limitations in detecting sophisticated attacks within high-dimensional and complex data environments.",
+      "scholar_id": "mhTDRysAAAAJ:KlAtU1dfN6UC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:KlAtU1dfN6UC"
+    },
+    {
+      "title": "A Survey on Application of AI on Reverse Engineering for Software Analysis and Security",
+      "authors": "Ashutosh Ghimire, Sahasra Rao Lingala, Junjie Zhang, Faris Alsulami, Fathi Amsaad",
+      "venue": "IEEE Access 13, 152903-152913",
+      "year": "2025",
+      "type": "Journal",
+      "featured": true,
+      "tags": [
+        "Software Security",
+        "Reverse Engineering",
+        "Survey"
+      ],
+      "link": "https://doi.org/10.1109/ACCESS.2025.3593456",
+      "doi": "10.1109/ACCESS.2025.3593456",
+      "citations": 6,
+      "abstract": "Reverse engineering process serves essential functions in software analysis and security auditing and malware detection but requires significant time and effort. Researchers and practitioners now investigate how Artificial Intelligence (AI) technology can automate and improve different reverse engineering procedures.",
+      "scholar_id": "mhTDRysAAAAJ:ULOm3_A8WrAC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:ULOm3_A8WrAC"
+    },
+    {
+      "title": "A Golden-Free Unsupervised ML-Assisted Security Approach for Detection of IC Hardware Trojans",
+      "authors": "Ashutosh Ghimire, Mohammed Alkurdi, Md. Tauhidur Rahman, Saraju Mohanty, Fathi Amsaad",
+      "venue": "ACM Journal on Emerging Technologies in Computing Systems 21(3)",
+      "year": "2025",
+      "type": "Journal",
+      "featured": true,
+      "tags": [
+        "Hardware Security",
+        "Trustworthy AI",
+        "Unsupervised ML",
+        "Side-Channel"
+      ],
+      "link": "https://doi.org/10.1145/3748652",
+      "doi": "10.1145/3748652",
+      "citations": 3,
+      "abstract": "Hardware Trojans are deliberate malicious hardware modifications inserted in semiconductor Integrated Circuits (ICs) for the purpose of stealing or leaking sensitive information, as well as disrupting critical systems upon activation.",
+      "scholar_id": "mhTDRysAAAAJ:IjCSPb-OGe4C",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:IjCSPb-OGe4C"
+    },
+    {
+      "title": "Kidney Stone Detection in Ultrasound Imaging: Addressing Noise and Image Segmentation",
+      "authors": "A. V. R. Tummala, Ashutosh Ghimire, Fathi Amsaad",
+      "venue": "International Conference on Secure IoT, Assured and Trusted Computing",
+      "year": "2025",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Healthcare AI",
+        "Image Segmentation",
+        "Ultrasound"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 1,
       "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
+      "scholar_id": "mhTDRysAAAAJ:_kc_bZDykSQC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:_kc_bZDykSQC"
+    },
+    {
+      "title": "Adaptive Ensemble Learning for Real-Time Financial Fraud Detection: A Lightweight Approach",
+      "authors": "Vishnu Vardhan Baligodugula, Ashutosh Ghimire, Fathi Amsaad",
+      "venue": "International Conference on Secure IoT, Assured and Trusted Computing",
+      "year": "2025",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Fraud Detection",
+        "Ensemble Learning",
+        "Trustworthy AI"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 1,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:YOwf2qJgpHMC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:YOwf2qJgpHMC"
+    },
+    {
+      "title": "Enhancing IoT Intrusion Detection Systems Through Adversarial Training",
+      "authors": "Karma Gurung, Ashutosh Ghimire, Fathi Amsaad",
+      "venue": "International Conference on Secure IoT, Assured and Trusted Computing",
+      "year": "2025",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "IoT Security",
+        "Adversarial Training",
+        "Intrusion Detection"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 1,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:Zph67rFs4hoC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:Zph67rFs4hoC"
     },
     {
       "title": "A Survey on Security Threats and Countermeasures in FPGA-Based Robotic Computing Systems",
@@ -157,10 +214,369 @@
       ],
       "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
       "doi": null,
-      "citations": null,
+      "citations": 0,
       "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
+      "scholar_id": "mhTDRysAAAAJ:qxL8FJ1GzNcC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:qxL8FJ1GzNcC"
+    },
+    {
+      "title": "An Overview of Secure Network Segmentation in Connected IIoT Environments",
+      "authors": "Vishnu Vardhan Baligodugula, Ashutosh Ghimire, Fathi Amsaad",
+      "venue": "Computing&AI Connect 1(1), 1-10",
+      "year": "2024",
+      "type": "Journal",
+      "featured": false,
+      "tags": [
+        "IIoT",
+        "Cybersecurity",
+        "Network Segmentation"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 20,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:8k81kl-MbHgC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:8k81kl-MbHgC"
+    },
+    {
+      "title": "A Parallel Approach to Enhance the Performance of Supervised Machine Learning Realized in a Multicore Environment",
+      "authors": "Ashutosh Ghimire, Fathi Amsaad",
+      "venue": "Machine Learning and Knowledge Extraction 6(3), 1840-1856",
+      "year": "2024",
+      "type": "Journal",
+      "featured": false,
+      "tags": [
+        "Parallel ML",
+        "Systems",
+        "Performance"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 15,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:0EnyYjriUFMC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:0EnyYjriUFMC"
+    },
+    {
+      "title": "Analyzing Aging Effects on SRAM PUFs: Implications for Security and Reliability",
+      "authors": "N. P. Bhatta, H. Singh, Ashutosh Ghimire, Fathi Amsaad",
+      "venue": "Journal of Hardware and Systems Security 8(3), 174-186",
+      "year": "2024",
+      "type": "Journal",
+      "featured": false,
+      "tags": [
+        "Hardware Security",
+        "PUF",
+        "Reliability"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 13,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:5nxA0vEk-isC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:5nxA0vEk-isC"
+    },
+    {
+      "title": "Enhancing Hardware Trojan Security through Reference-Free Clustering using Representatives",
+      "authors": "Ashutosh Ghimire, Mahommed Alkurdi, Fathi Amsaad",
+      "venue": "VLSID 2024, 467-473",
+      "year": "2024",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Hardware Security",
+        "Clustering",
+        "Reference-Free Detection"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 6,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:UebtZRa9Y70C",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:UebtZRa9Y70C"
+    },
+    {
+      "title": "Adversarial Attack Against Golden Reference-Free Hardware Trojan Detection Approach",
+      "authors": "Ashutosh Ghimire, Mohammed Alkurdi, Karma Gurung, Fathi Amsaad",
+      "venue": "IEEE Physical Assurance and Inspection of Electronics, 1-7",
+      "year": "2024",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Adversarial ML",
+        "Hardware Security",
+        "Trustworthy AI"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 1,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:3fE2CSJIrl8C",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:3fE2CSJIrl8C"
+    },
+    {
+      "title": "AI-Enabled Hardware Trojan Detection for Secure and Trusted Context-Aware Embedded Systems",
+      "authors": "Ashutosh Ghimire, Mohammed Alkurdi, Fathi Amsaad, M. T. Rahman, N. Z. Jhanjhi",
+      "venue": "Authorea Preprints",
+      "year": "2024",
+      "type": "Preprint",
+      "featured": false,
+      "tags": [
+        "Hardware Security",
+        "Embedded Systems",
+        "AI"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 1,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:Se3iqnhoufwC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:Se3iqnhoufwC"
+    },
+    {
+      "title": "Adversarial Attack Resilient ML-Assisted Hardware Trojan Detection Technique",
+      "authors": "Mohammed Alkurdi, Ashutosh Ghimire, Fathi H. Amsaad",
+      "venue": "ISVLSI 2024, 313-318",
+      "year": "2024",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Adversarial ML",
+        "Hardware Security"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 0,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:MXK_kJrjxJIC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:MXK_kJrjxJIC"
+    },
+    {
+      "title": "An ML-Assisted Golden-Free Hardware Trojan Localization and Detection Approach for Trusted Microelectronics",
+      "authors": "Ashutosh Ghimire",
+      "venue": "Wright State University",
+      "year": "2024",
+      "type": "Thesis",
+      "featured": false,
+      "tags": [
+        "Hardware Security",
+        "Thesis",
+        "Localization"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 0,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:hqOjcs7Dif8C",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:hqOjcs7Dif8C"
+    },
+    {
+      "title": "Implementation of Secure and Privacy-Aware AI Hardware Using Distributed Federated Learning",
+      "authors": "Ashutosh Ghimire, A. N. Asiri, B. Hildebrand, Fathi Amsaad",
+      "venue": "IEEE Dallas Circuits and Systems Conference, 1-6",
+      "year": "2023",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Federated Learning",
+        "AI Hardware",
+        "Privacy"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 18,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:qjMakFHDy7sC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:qjMakFHDy7sC"
+    },
+    {
+      "title": "Quantum Communication Networks: Design, Reliability, and Security",
+      "authors": "B. Hildebrand, Ashutosh Ghimire, Fathi Amsaad, A. Razaque, S. P. Mohanty",
+      "venue": "IEEE Potentials 44(1), 4-10",
+      "year": "2023",
+      "type": "Journal",
+      "featured": false,
+      "tags": [
+        "Quantum Networks",
+        "Security",
+        "Reliability"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 18,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:zYLM7Y9cAGgC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:zYLM7Y9cAGgC"
+    },
+    {
+      "title": "ML-Assisted Security for Anomaly Detection in Industrial IoT (IIoT) Applications",
+      "authors": "B. R. Konatham, T. Simra, Ashutosh Ghimire, Fathi Amsaad, M. I. Ibrahem, N. Z. Jhanjhi",
+      "venue": "International Conference on Smart Technologies for Smart Nation",
+      "year": "2023",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "IIoT",
+        "Anomaly Detection",
+        "Cybersecurity"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 12,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:roLk4NBRz8UC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:roLk4NBRz8UC"
+    },
+    {
+      "title": "Power Analysis Side-Channel Attacks on Same and Cross-Device Settings: A Survey of Machine Learning Techniques",
+      "authors": "Ashutosh Ghimire, Vishnu Vardhan Baligodugula, Fathi Amsaad",
+      "venue": "IFIP International Internet of Things Conference, 357-367",
+      "year": "2023",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Side-Channel",
+        "ML Security",
+        "Survey"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 11,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:W7OEmFMy1HYC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:W7OEmFMy1HYC"
+    },
+    {
+      "title": "FPGA Hardware Trojan Detection: Golden-Free Machine Learning Approach",
+      "authors": "Ashutosh Ghimire, Fathi Amsaad, T. Hossain, T. Hoque, A. Sherif",
+      "venue": "NAECON 2023, 181-186",
+      "year": "2023",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Hardware Security",
+        "FPGA",
+        "Machine Learning"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 9,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:LkGwnXOMwfcC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:LkGwnXOMwfcC"
+    },
+    {
+      "title": "Unsupervised IC Security with Machine Learning for Trojan Detection",
+      "authors": "Ashutosh Ghimire, H. A. Fathi, T. Hoque, K. M. Hopkinson, M. T. Rahman",
+      "venue": "MWSCAS 2023, 20-24",
+      "year": "2023",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Hardware Security",
+        "Unsupervised ML"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 7,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:UeHWp8X0CEIC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:UeHWp8X0CEIC"
+    },
+    {
+      "title": "Aging of SRAM PUFs: Mitigation and Advancements Through Machine Learning Techniques",
+      "authors": "N. P. Bhatta, H. Singh, Ashutosh Ghimire, M. T. Rahman, Fathi Amsaad",
+      "venue": "IEEE Physical Assurance and Inspection of Electronics, 1-6",
+      "year": "2023",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Hardware Security",
+        "PUF",
+        "Machine Learning"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 5,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:_FxGoFyzp5QC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:_FxGoFyzp5QC"
+    },
+    {
+      "title": "Comprehensive Survey of Machine Learning Techniques for Detecting and Preventing Network Layer DoS Attacks",
+      "authors": "N. P. Bhatta, Ashutosh Ghimire, A. A. Hossain, Fathi Amsaad",
+      "venue": "IFIP International Internet of Things Conference, 347-356",
+      "year": "2023",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Cybersecurity",
+        "DoS",
+        "Survey"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 4,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:Y0pCki6q_DkC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:Y0pCki6q_DkC"
+    },
+    {
+      "title": "Evaluating the Robustness of SRAM Physical Unclonable Functions: Empirical Investigations",
+      "authors": "H. Singh, N. P. Bhatta, K. M. T. Jawad, Ashutosh Ghimire, M. D. T. Rahman, Fathi Amsaad",
+      "venue": "IEEE Physical Assurance and Inspection of Electronics, 1-7",
+      "year": "2023",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Hardware Security",
+        "PUF",
+        "Reliability"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 3,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:WF5omc3nYNoC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:WF5omc3nYNoC"
+    },
+    {
+      "title": "Identification and Localization of Quantum Electromagnetic Fields of Hardware Trojan Attacks Using QDM-Based Unsupervised Deep Learning",
+      "authors": "Ashutosh Ghimire, A. A. Hossain, N. P. Bhatta, Fathi Amsaad",
+      "venue": "IEEE Physical Assurance and Inspection of Electronics, 1-7",
+      "year": "2023",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "Hardware Security",
+        "EM Side-Channel",
+        "Deep Learning"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 2,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:YsMSGLbcyi4C",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:YsMSGLbcyi4C"
+    },
+    {
+      "title": "Potential of Unsupervised Deep Learning for Detection of EM Side-Channel Attacks",
+      "authors": "Ashutosh Ghimire, H. Singh, N. P. Bhatta, Fathi Amsaad",
+      "venue": "IEEE Physical Assurance and Inspection of Electronics, 1-6",
+      "year": "2023",
+      "type": "Conference",
+      "featured": false,
+      "tags": [
+        "EM Side-Channel",
+        "Deep Learning",
+        "Hardware Security"
+      ],
+      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
+      "doi": null,
+      "citations": 1,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:ufrVoPGSRksC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:ufrVoPGSRksC"
     },
     {
       "title": "CSatDTA: Prediction of Drug-Target Binding Affinity Using Convolution Model with Self-Attention",
@@ -177,198 +593,10 @@
       ],
       "link": "https://doi.org/10.3390/ijms23158453",
       "doi": "10.3390/ijms23158453",
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Adversarial Attack Resilient ML-Assisted Hardware Trojan Detection Technique",
-      "authors": "Mohammed Alkurdi, Ashutosh Ghimire, Fathi H. Amsaad",
-      "venue": "ISVLSI 2024, 313-318",
-      "year": "2024",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Adversarial ML",
-        "Hardware Security"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Enhancing Hardware Trojan Security through Reference-Free Clustering using Representatives",
-      "authors": "Ashutosh Ghimire, Mahommed Alkurdi, Fathi Amsaad",
-      "venue": "VLSID 2024, 467-473",
-      "year": "2024",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Hardware Security",
-        "Clustering",
-        "Reference-Free Detection"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Analyzing Aging Effects on SRAM PUFs: Implications for Security and Reliability",
-      "authors": "N. P. Bhatta, H. Singh, Ashutosh Ghimire, Fathi Amsaad",
-      "venue": "Journal of Hardware and Systems Security 8(3), 174-186",
-      "year": "2024",
-      "type": "Journal",
-      "featured": false,
-      "tags": [
-        "Hardware Security",
-        "PUF",
-        "Reliability"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "A Parallel Approach to Enhance the Performance of Supervised Machine Learning Realized in a Multicore Environment",
-      "authors": "Ashutosh Ghimire, Fathi Amsaad",
-      "venue": "Machine Learning and Knowledge Extraction 6(3), 1840-1856",
-      "year": "2024",
-      "type": "Journal",
-      "featured": false,
-      "tags": [
-        "Parallel ML",
-        "Systems",
-        "Performance"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Unsupervised IC Security with Machine Learning for Trojan Detection",
-      "authors": "Ashutosh Ghimire, H. A. Fathi, T. Hoque, K. M. Hopkinson, M. T. Rahman",
-      "venue": "MWSCAS 2023, 20-24",
-      "year": "2023",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Hardware Security",
-        "Unsupervised ML"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Power Analysis Side-Channel Attacks on Same and Cross-Device Settings: A Survey of Machine Learning Techniques",
-      "authors": "Ashutosh Ghimire, Vishnu Vardhan Baligodugula, Fathi Amsaad",
-      "venue": "IFIP International Internet of Things Conference, 357-367",
-      "year": "2023",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Side-Channel",
-        "ML Security",
-        "Survey"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Implementation of Secure and Privacy-Aware AI Hardware Using Distributed Federated Learning",
-      "authors": "Ashutosh Ghimire, A. N. Asiri, B. Hildebrand, Fathi Amsaad",
-      "venue": "IEEE Dallas Circuits and Systems Conference, 1-6",
-      "year": "2023",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Federated Learning",
-        "AI Hardware",
-        "Privacy"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "An Overview of Secure Network Segmentation in Connected IIoT Environments",
-      "authors": "Vishnu Vardhan Baligodugula, Ashutosh Ghimire, Fathi Amsaad",
-      "venue": "Computing&AI Connect 1(1), 1-10",
-      "year": "2024",
-      "type": "Journal",
-      "featured": false,
-      "tags": [
-        "IIoT",
-        "Cybersecurity",
-        "Network Segmentation"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Quantum Communication Networks: Design, Reliability, and Security",
-      "authors": "B. Hildebrand, Ashutosh Ghimire, Fathi Amsaad, A. Razaque, S. P. Mohanty",
-      "venue": "IEEE Potentials 44(1), 4-10",
-      "year": "2023",
-      "type": "Journal",
-      "featured": false,
-      "tags": [
-        "Quantum Networks",
-        "Security",
-        "Reliability"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "ML-Assisted Security for Anomaly Detection in Industrial IoT (IIoT) Applications",
-      "authors": "B. R. Konatham, T. Simra, Ashutosh Ghimire, Fathi Amsaad, M. I. Ibrahem, N. Z. Jhanjhi",
-      "venue": "International Conference on Smart Technologies for Smart Nation",
-      "year": "2023",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "IIoT",
-        "Anomaly Detection",
-        "Cybersecurity"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
+      "citations": 49,
+      "abstract": "Drug discovery, which aids to identify potential novel treatments, entails a broad range of fields of science, including chemistry, pharmacology, and biology. In the early stages of drug development, predicting drug-target affinity is crucial.",
+      "scholar_id": "mhTDRysAAAAJ:2osOgNQ5qMEC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:2osOgNQ5qMEC"
     },
     {
       "title": "Nepali Handwriting Recognition Using Convolution Neural Network",
@@ -384,29 +612,10 @@
       ],
       "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
       "doi": null,
-      "citations": null,
+      "citations": 10,
       "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "FPGA Hardware Trojan Detection: Golden-Free Machine Learning Approach",
-      "authors": "Ashutosh Ghimire, Fathi Amsaad, T. Hossain, T. Hoque, A. Sherif",
-      "venue": "NAECON 2023, 181-186",
-      "year": "2023",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Hardware Security",
-        "FPGA",
-        "Machine Learning"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
+      "scholar_id": "mhTDRysAAAAJ:u-x6o8ySG0sC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:u-x6o8ySG0sC"
     },
     {
       "title": "Predicting Breast Cancer Using Support Vector Machine Learning Algorithm",
@@ -422,219 +631,10 @@
       ],
       "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
       "doi": null,
-      "citations": null,
+      "citations": 7,
       "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Aging of SRAM PUFs: Mitigation and Advancements Through Machine Learning Techniques",
-      "authors": "N. P. Bhatta, H. Singh, Ashutosh Ghimire, M. T. Rahman, Fathi Amsaad",
-      "venue": "IEEE Physical Assurance and Inspection of Electronics, 1-6",
-      "year": "2023",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Hardware Security",
-        "PUF",
-        "Machine Learning"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Comprehensive Survey of Machine Learning Techniques for Detecting and Preventing Network Layer DoS Attacks",
-      "authors": "N. P. Bhatta, Ashutosh Ghimire, A. A. Hossain, Fathi Amsaad",
-      "venue": "IFIP International Internet of Things Conference, 347-356",
-      "year": "2023",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Cybersecurity",
-        "DoS",
-        "Survey"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Evaluating the Robustness of SRAM Physical Unclonable Functions: Empirical Investigations",
-      "authors": "H. Singh, N. P. Bhatta, K. M. T. Jawad, Ashutosh Ghimire, M. D. T. Rahman, Fathi Amsaad",
-      "venue": "IEEE Physical Assurance and Inspection of Electronics, 1-7",
-      "year": "2023",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Hardware Security",
-        "PUF",
-        "Reliability"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Identification and Localization of Quantum Electromagnetic Fields of Hardware Trojan Attacks Using QDM-Based Unsupervised Deep Learning",
-      "authors": "Ashutosh Ghimire, A. A. Hossain, N. P. Bhatta, Fathi Amsaad",
-      "venue": "IEEE Physical Assurance and Inspection of Electronics, 1-7",
-      "year": "2023",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Hardware Security",
-        "EM Side-Channel",
-        "Deep Learning"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Kidney Stone Detection in Ultrasound Imaging: Addressing Noise and Image Segmentation",
-      "authors": "A. V. R. Tummala, Ashutosh Ghimire, Fathi Amsaad",
-      "venue": "International Conference on Secure IoT, Assured and Trusted Computing",
-      "year": "2025",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Healthcare AI",
-        "Image Segmentation",
-        "Ultrasound"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Adaptive Ensemble Learning for Real-Time Financial Fraud Detection: A Lightweight Approach",
-      "authors": "Vishnu Vardhan Baligodugula, Ashutosh Ghimire, Fathi Amsaad",
-      "venue": "International Conference on Secure IoT, Assured and Trusted Computing",
-      "year": "2025",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Fraud Detection",
-        "Ensemble Learning",
-        "Trustworthy AI"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Adversarial Attack Against Golden Reference-Free Hardware Trojan Detection Approach",
-      "authors": "Ashutosh Ghimire, Mohammed Alkurdi, Karma Gurung, Fathi Amsaad",
-      "venue": "IEEE Physical Assurance and Inspection of Electronics, 1-7",
-      "year": "2024",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "Adversarial ML",
-        "Hardware Security",
-        "Trustworthy AI"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "AI-Enabled Hardware Trojan Detection for Secure and Trusted Context-Aware Embedded Systems",
-      "authors": "Ashutosh Ghimire, Mohammed Alkurdi, Fathi Amsaad, M. T. Rahman, N. Z. Jhanjhi",
-      "venue": "Authorea Preprints",
-      "year": "2024",
-      "type": "Preprint",
-      "featured": false,
-      "tags": [
-        "Hardware Security",
-        "Embedded Systems",
-        "AI"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Potential of Unsupervised Deep Learning for Detection of EM Side-Channel Attacks",
-      "authors": "Ashutosh Ghimire, H. Singh, N. P. Bhatta, Fathi Amsaad",
-      "venue": "IEEE Physical Assurance and Inspection of Electronics, 1-6",
-      "year": "2023",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "EM Side-Channel",
-        "Deep Learning",
-        "Hardware Security"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "Enhancing IoT Intrusion Detection Systems Through Adversarial Training",
-      "authors": "Karma Gurung, Ashutosh Ghimire, Fathi Amsaad",
-      "venue": "International Conference on Secure IoT, Assured and Trusted Computing",
-      "year": "2025",
-      "type": "Conference",
-      "featured": false,
-      "tags": [
-        "IoT Security",
-        "Adversarial Training",
-        "Intrusion Detection"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
-    },
-    {
-      "title": "An ML-Assisted Golden-Free Hardware Trojan Localization and Detection Approach for Trusted Microelectronics",
-      "authors": "Ashutosh Ghimire",
-      "venue": "Wright State University",
-      "year": "2024",
-      "type": "Thesis",
-      "featured": false,
-      "tags": [
-        "Hardware Security",
-        "Thesis",
-        "Localization"
-      ],
-      "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-      "doi": null,
-      "citations": null,
-      "abstract": null,
-      "scholar_id": null,
-      "scholar_url": null
+      "scholar_id": "mhTDRysAAAAJ:u5HHmVD_uO8C",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:u5HHmVD_uO8C"
     }
   ]
 }
