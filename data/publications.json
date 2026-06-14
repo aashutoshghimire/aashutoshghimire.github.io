@@ -1,11 +1,11 @@
 {
   "scholar_user_id": "mhTDRysAAAAJ",
   "scholar_profile_url": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
-  "total_citations": 256,
+  "total_citations": 260,
   "h_index": 10,
   "i10_index": 11,
-  "last_refreshed": "2026-06-07",
-  "last_refresh_status": "ok — 33 updated, 0 new, 7 abstracts enriched",
+  "last_refreshed": "2026-06-14",
+  "last_refresh_status": "ok — 33 updated, 1 new, 0 abstracts enriched",
   "publications": [
     {
       "title": "AI-enabled image processing approach for efficient clustering and identification of hardware Trojans",
@@ -66,6 +66,21 @@
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:4DMP91E08xMC"
     },
     {
+      "title": "A Conceptual Framework for Multiplayer Mixed Reality Training with Biometric Feedback",
+      "authors": "",
+      "venue": "2026 IEEE 2nd International Conference on Secure IoT, Assured and Trusted …, 2026",
+      "year": "2026",
+      "type": "Other",
+      "featured": false,
+      "tags": [],
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:mVmsd5A6BfQC",
+      "doi": null,
+      "citations": 0,
+      "abstract": null,
+      "scholar_id": "mhTDRysAAAAJ:mVmsd5A6BfQC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:mVmsd5A6BfQC"
+    },
+    {
       "title": "Enhancing Cybersecurity in Critical Infrastructure with LLM-Assisted Explainable IoT Systems",
       "authors": "Ashutosh Ghimire, Ghazal Ghajari, Karma Gurung, Love Kumar Sah, Fathi H. Amsaad",
       "venue": "2025 1st International Conference on Secure IoT, Assured and Trusted Computing",
@@ -118,7 +133,7 @@
       ],
       "link": "https://doi.org/10.1109/ACCESS.2025.3593456",
       "doi": "10.1109/ACCESS.2025.3593456",
-      "citations": 6,
+      "citations": 9,
       "abstract": "Reverse engineering process serves essential functions in software analysis and security auditing and malware detection but requires significant time and effort. Researchers and practitioners now investigate how Artificial Intelligence (AI) technology can automate and improve different reverse engineering procedures.",
       "scholar_id": "mhTDRysAAAAJ:ULOm3_A8WrAC",
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:ULOm3_A8WrAC"
@@ -271,7 +286,7 @@
       ],
       "link": "https://scholar.google.com/citations?user=mhTDRysAAAAJ&hl=en",
       "doi": null,
-      "citations": 13,
+      "citations": 14,
       "abstract": null,
       "scholar_id": "mhTDRysAAAAJ:5nxA0vEk-isC",
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mhTDRysAAAAJ&citation_for_view=mhTDRysAAAAJ:5nxA0vEk-isC"
