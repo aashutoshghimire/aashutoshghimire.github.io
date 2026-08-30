@@ -4,8 +4,8 @@
   "total_citations": 311,
   "h_index": 12,
   "i10_index": 14,
-  "last_refreshed": "2026-08-23",
-  "last_refresh_status": "ok — 39 updated, 0 new, 0 abstracts enriched",
+  "last_refreshed": "2026-08-30",
+  "last_refresh_status": "scholar fetch failed; previous data retained",
   "publications": [
     {
       "title": "AI-enabled image processing approach for efficient clustering and identification of hardware Trojans",
